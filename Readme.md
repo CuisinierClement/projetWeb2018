@@ -10,4 +10,12 @@ Groupe : Amed Soumare
 
 Date rendu : 29 Octobre 2017 
 Email : projet2017@filigrane-technologie.fr
-Contenu : URL github + sources + readme  présentant le projet, les choix, les fonctionnalités ... + Un tuto INSTALL
+Contenu : URL github + sources + readme  prÃ©sentant le projet, les choix, les fonctionnalitÃ©s ... + Un tuto INSTALL
+
+-------------------------------------------------------
+Techno :
+Back : JAVA / Maven
+Front : Angular / Bootstrap
+BDD : Mysql
+
+Extra : REST / JSON / JWT
