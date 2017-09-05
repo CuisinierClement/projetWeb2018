@@ -1,0 +1,166 @@
+[
+    {
+        "group":"manage-domain",
+        "name":"projects",
+        "items":[
+            {
+                "name":" Prototypage serveur de base de données Amazon web service",
+                "responsableId":"1484014",
+                "deliverables":[
+                    {
+                        "name":"Conception du model de l'application sur EA",
+                        "dateStart":"2016-10-04",
+                        "dateEnd":"2016-10-29",
+                        "dateNewStart":"2016-11-04",
+                        "dateNewEnd":"2016-11-09"
+                    },
+                    {
+                        "name":"Developpement des test conformement à l'approche TDD",
+                        "dateStart":"2016-10-24",
+                        "dateEnd":"2016-11-09",
+                        "dateNewStart":"2016-01-04",
+                        "dateNewEnd":"2016-11-29",
+                        "comment":"comment 10"
+                    },
+                    {
+                        "name":"Migration des données du serveur de base de données local vers serveur AWS",
+                        "dateStart":"2016-10-24",
+                        "dateEnd":"2016-11-09",
+                        "dateNewStart":"2016-01-04",
+                        "dateNewEnd":"2016-11-29",
+                        "comment":"comment 11"
+                    },
+                    {
+                        "name":"Mise à jour de l'application",
+                        "dateStart":"2016-11-24",
+                        "dateEnd":"2016-11-25",
+                        "dateNewStart":"2016-11-28",
+                        "dateNewEnd":"2016-11-29",
+                        "comment":"comment 12"
+                    }
+                ]
+            },
+            {
+                "name":"LAB4411 : Bus de terrain",
+                "responsableId":"1484014",
+                "deliverables":[
+                    {
+                        "name":"Code source du projet",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"MAN4303 : Management de projet",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"Compte rendu de projet (PDF)",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"INF4032 : Réseaux IP",
+                "responsableId":"1495796",
+                "deliverables":[
+                    {
+                        "name":"rédaction de compte rendu de TP",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"LAB4412 : OS Temps réel",
+                "responsableId":"1493919",
+                "deliverables":[
+                    {
+                        "name":"rédaction de compte rendu de TP",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"IMA4134 : Réalité virtuelle",
+                "responsableId":"1484094",
+                "deliverables":[
+                    {
+                        "name":"Mini projet d'initiation à la réalitivirtuelle",
+                        "dateStart":"2015-10-01",
+                        "dateEnd":"2016-03-15",
+                        "dateNewStart":"2015-10-01",
+                        "dateNewEnd":"2016-03-15"
+                    },
+                    {
+                        "name":"Projet de groupe simulation d'environnement",
+                        "dateStart":"2015-10-01",
+                        "dateEnd":"2016-08-31",
+                        "dateNewStart":"2015-10-01",
+                        "dateNewEnd":"2016-03-30"
+                    },
+                    {
+                        "name":"Projet conception",
+                        "dateStart":"2016-01-01",
+                        "dateEnd":"2016-08-31",
+                        "dateNewStart":"2016-01-01",
+                        "dateNewEnd":"2016-06-01"
+                    },
+                    {
+                        "name":"Presentation orale du projet",
+                        "dateStart":"2016-03-02",
+                        "dateEnd":"2016-09-01",
+                        "dateNewStart":"2016-03-02",
+                        "dateNewEnd":"2016-06-01"
+                    }
+                ]
+            },
+            {
+                "name":"ICQ4168 : Réseaux de neurones",
+                "responsableId":"1493170",
+                "deliverables":[
+                    {
+                        "name":"Compte rendu de TP1",
+                        "dateStart":"2016-06-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-06-01",
+                        "dateNewEnd":"2016-06-30"
+                    },
+                    {
+                        "name":"Compte rendu de TP2",
+                        "dateStart":"2016-09-01",
+                        "dateEnd":"2016-12-16",
+                        "dateNewStart":"2016-09-01",
+                        "dateNewEnd":"2016-12-16"
+                    },
+                    {
+                        "name":"Compte rendu de TP3",
+                        "dateStart":"2016-09-01",
+                        "dateEnd":"2016-12-16",
+                        "dateNewStart":"2016-09-01",
+                        "dateNewEnd":"2016-12-16"
+                    },
+                    {
+                        "name":"Compte rendu de TP4",
+                        "dateStart":"2016-09-01",
+                        "dateEnd":"2016-12-16",
+                        "dateNewStart":"2016-09-01",
+                        "dateNewEnd":"2016-12-16"
+                    }
+                ]
+            }
+            
+        ]
+    }
+]
