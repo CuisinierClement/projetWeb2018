@@ -1,0 +1,19 @@
+/***********************************************/
+/*****       CSS of MANAGE PROJECT         *****/
+/***********************************************/
+
+/* Overwrite to put datepicker in foreground */
+.md-datepicker-calendar-pane {
+  z-index: 1151 !important;
+  }
+  
+/* To fill out the lign ... */
+hr
+{
+    border-width: 4px 0px 0px !important;
+}
+
+/*Change background color of deliverables panel*/
+.panel-default>.panel-heading {
+    background-color: #c9cbe7 !important;
+}

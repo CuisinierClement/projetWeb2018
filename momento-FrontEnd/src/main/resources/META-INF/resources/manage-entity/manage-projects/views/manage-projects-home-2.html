@@ -1,0 +1,144 @@
+<div align=center>
+    <h1>{{ 'application.view.manage-projects.home' | localize }}</h1>
+
+
+    <div class="row">
+        <div class="col-md-7"></div>
+        <div class="col-md-5">
+
+            <button type="button" data-ng-click="manageProject.modalUnique.actions._showProjectModal('add', 'Add a Project')" class="btn btn-success">Add Project</button>
+            <button type="button" data-ng-click="manageProject.modalUnique.actions._showProjectModal('edit', 'Edit a Project')" class="btn btn-info">Edit Project</button>
+            <button type="button" data-ng-click="manageProject.modalUnique.actions._showProjectModal('delete', 'Delete this project?')" class="btn btn-danger">Delete Project</button>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <br />
+        </div>
+    </div>
+
+    <!--  Grid : display all Users -->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="grid" data-ui-grid="gridOptionsHomeBis" data-ui-grid-selection data-ng-click="isOpen()"></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12"><br /><br /><br /></div>
+    </div>
+    
+      <div class="row">
+        <div class="col-md-7"></div>
+        <div class="col-md-5">
+
+            <button type="button" data-ng-click="manageDeliverable.modalUnique.actions._openFrame()" class="btn btn-success">Add Deliverable</button>
+            <button type="button" data-ng-click="manageDeliverable.modalUnique.actions._openFrame()" class="btn btn-info">Edit Deliverable</button>
+            <button type="button" data-ng-click="manageDeliverable.modalUnique.actions._openFrame()" class="btn btn-danger">Delete Deliverable</button>
+
+        </div>
+    </div>
+       <div class="row">
+        <div class="col-md-12"><br /></div>
+    </div>
+   
+    <div class="row" data-uib-collapse="open">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="grid" data-ui-grid="gridOptionsDeliverables" style="width:1100px;height:380px;" data-ui-grid-selection></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+ <!-- Modal to add or edit or delete or consult a project -->
+    <div id="modalId" class="modal fade" style="margin: 0px !important; display: none;" tabindex="-1" data-role="dialog" data-aria-labelledby="modalActionLabel" data-aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title"> {{ modalTitle }} </h3>
+            </div>
+
+            <form name="formProject">
+<!--                 <div class="form-group col-md-12">
+                    <label for="project-name" class="control-label" data-ng-class="{'has-error' : !project.name}">Name : 
+                        <input name="id" data-ng-model="project.id" type="text" class="form-control" id="project-id" placeholder="Ex: 1000" data-ng-required="true" 
+                         data-tooltip-trigger="mouseenter" data-tooltip-enable="!project.id">                   
+                    </label>
+                    <div data-role="alert">
+                        <span data-ng-show="formProject.id.$invalid">ID Error!</span>
+                   </div>
+                </div> -->
+                
+                <div class="form-group col-md-12">
+                    <label for="project-name" class="control-label" data-ng-class="{'has-error' : !project.name}">Name : 
+                        <input name="name" data-ng-model="project.name" type="text" class="form-control" id="project-name" placeholder="Ex: Project 1" data-ng-required="true" 
+                        data-tooltip-trigger="mouseenter" data-tooltip-enable="!project.name">
+                    </label>
+ <!-- <select id="project-responsable" data-ng-disabled="disabledResponsable" data-ng-model="project.responsable" data-ng-options="responsable as (user.login + '-' + user.firstName) for user in users" name="project-responsable" class="form-control"></select> -->
+                    <div data-role="alert">
+                     <span data-ng-show="formProject.name.$invalid">Name Error!</span>
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-12">
+                    <label for="project-responsable" class="control-label" data-ng-class="{'has-error' : !project.responsable}">Responsable : 
+                        <input name="name" data-ng-model="project.responsable" type="text" class="form-control" id="project-responsable" placeholder="Ex: u485555" data-ng-required="true" 
+                        data-tooltip-trigger="mouseenter" data-tooltip-enable="!project.responsable">
+                    </label>
+
+                    <div data-role="alert">
+                     <span data-ng-show="formProject.responsable.$invalid">Responsable Error!</span>
+                    </div>
+                </div>
+            </form>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-ng-click="manageProject.modalUnique.actions._confirmProject()" data-ng-disabled="formProject.$invalid">OK</button>
+                <button class="btn btn-warning" data-ng-click="manageProject.modalUnique.actions._cancelFrame()">Cancel</button>
+            </div>
+        </div>
+    </div>
+ <!-- END Modal to add or edit or delete or consult a project -->
+    
+     <!-- Modal to add or edit or delete a Deliverable -->
+        <div id="modalDeliverableId" class="modal fade" style="margin: 0px !important; display: none;" tabindex="-1" data-role="dialog" data-aria-labelledby="modalActionLabel" data-aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title"> {{ modalTitle }} </h3>
+            </div>
+
+            <form name="formDeliverable">
+                <div class="form-group col-md-12">
+                    <label for="deliverable-id" class="control-label" data-ng-class="{'has-error' : !deliverable.id}">Id : 
+                        <input name="id" data-ng-model="deliverable.id" type="text" class="form-control" id="deliverable-id" placeholder="Ex: 1001" data-ng-required="true" 
+                         data-tooltip-trigger="mouseenter" data-tooltip-enable="!deliverable.id">                   
+                    </label>
+                    <div data-role="alert">
+                        <span data-ng-show="formDeliverable.id.$invalid">ID Error!</span>
+                   </div>
+                </div>
+                
+                <div class="form-group col-md-12">
+                    <label for="deliverable-name" class="control-label" data-ng-class="{'has-error' : !deliverable.name}">Name : 
+                        <input name="name" data-ng-model="deliverable.name" type="text" class="form-control" id="deliverable-name" placeholder="Ex: Deliverable 1" data-ng-required="true" 
+                        data-tooltip-trigger="mouseenter" data-tooltip-enable="!deliverable.name">
+                    </label>
+
+                    <div data-role="alert">
+                     <span data-ng-show="formDeliverable.name.$invalid">Name Error!</span>
+                    </div>
+                </div>
+            </form>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-ng-click="manageDeliverable.modalUnique.actions._cancelFrame()" data-ng-disabled="formDeliverable.$invalid">OK</button>
+                <button class="btn btn-warning" data-ng-click="manageDeliverable.modalUnique.actions._cancelFrame()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal to add or edit or delete a Deliverable -->
+    
+</div>

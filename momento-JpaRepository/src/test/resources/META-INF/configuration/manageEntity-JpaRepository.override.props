@@ -1,0 +1,58 @@
+# This configuration file can override the main configuration for integration tests
+
+[com.inetpsa.pi201.domains.manageEntity-JpaRepository]
+importUserCsvexample=META-INF/testdata/Users.csv
+importProjectCsvexample=META-INF/testdata/Projects.csv
+importProjectsWithDeliverablesFromCsv=META-INF/testdata/ProjectsDeliverables.csv
+
+
+
+# =====================================================================================
+# =======================             Part to manage Jpa          =====================
+# =====================================================================================
+[org.seedstack.seed]
+
+#Manager Transaction definition
+transaction.transaction-manager=org.seedstack.seed.transaction.internal.LocalTransactionManager
+transaction.default-handler=org.seedstack.seed.transaction.internal.LocalTransactionManager
+
+[org.seedstack]
+#Declaring the JPA Unit
+#[org.seedstack.seed] 
+jpa.units=manage-domain
+# Configure the application data source
+jdbc.datasources=test-ds
+
+# Configure the application data source (change since seedStack 11.15) : here test-ds
+[org.seedstack.jdbc.datasource.test-ds]
+driver = org.hsqldb.jdbcDriver
+url = jdbc:hsqldb:mem:test
+#Uncomment if we want to use a hsqldb filesytem data base (not mem)
+#url = jdbc:hsqldb:hsql://localhost/xdb
+user = sa
+password =
+property.sql.enforce_strict_size = true
+
+#Configuring the JPA Unit (change since seedStack 11.15)
+[org.seedstack.jpa.unit.manage-domain]
+datasource = test-ds
+property.hibernate.dialect = org.hibernate.dialect.HSQLDialect
+#property.hibernate.hbm2ddl.auto = update
+property.hibernate.hbm2ddl.auto = create
+
+transaction-type = RESOURCE_LOCAL
+#shared-cache-mode = ALL
+
+# To retrieve all entities
+[com.inetpsa.pi201.domains.manageprojects.*]
+jpa-unit = manage-domain
+
+
+[org.seedstack.seed.security.users]
+retoucheur = retoucheur, MYPROJECT.RETROUCHEUR
+admin = password, MYPROJECT.ADMINSITRATOR
+
+[org.seedstack.seed.security.roles]
+ord-i18n.reader=MYPROJECT.RETROUCHEUR
+ord-i18n.translator=MYPROJECT.ADMINSITRATOR
+

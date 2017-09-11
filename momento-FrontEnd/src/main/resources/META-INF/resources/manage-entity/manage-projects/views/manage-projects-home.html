@@ -1,0 +1,295 @@
+<div align=center>
+    <h1>{{ 'application.view.manage-projects.home' | localize }}</h1>
+
+    <div style="margin-left: 30px; margin-right: 50px;">
+        <div class="row">
+            <div class="col-md-1">
+                <button type="button" data-ng-click="manageProject.modalUnique.actions._openFrame()" class="btn btn-success">Add Project</button>
+            </div>
+            <div class="col-md-11"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <br />
+            </div>
+        </div>
+
+        <div class="row">
+            <!--  PROJECT LIST -->
+            <div class="col-md-3">
+                <div class="grid" data-ui-grid="gridOptionsHomeBis" data-ui-grid-selection data-ng-click="isCollapsed()"></div>
+            </div>
+
+            <!-- PROJECT DETAILS + LIST OF DELIVERABLES OF PROJECT SELECTED -->
+            <div class="col-md-9">
+                <div class="row">
+                    <div data-uib-collapse="collapsed" class="well well-lg">
+                  
+                            <!-- Project details -->
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h3 class="title">{{ projects.name }}</h3>
+                                </div>
+                                <div class="col-md-5">
+                                    <button type="button" data-ng-click="manageProject.modalUnique.actions._openFrame()" class="btn btn-info">Edit
+                                        Project</button>
+                                    <button type="button" data-ng-click="manageProject.modalUnique.actions._openFrame()" class="btn btn-danger">Delete
+                                        Project</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <uib-progressbar class="progress-striped active" max="100" value="20" type="info"> <i>20/100</i></uib-progressbar>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="../images/user1.png" height="50px" width="50px" alt="user"/> Responsable : <i> {{ projects.responsable }} - {{ projects.responsableFirstName }} - {{
+                                        projects.responsableName }}</i>
+                                </div>
+                                <div class="col-md-6"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <br /> <br />
+                                    <hr />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">LIST OF DELIVERABLES  <i class="glyphicon glyphicon-chevron-down"></i></div>
+                                <div class="col-md-3"></div>
+                                <div class="col-md-5">
+                                    <button type="button" data-ng-click="manageDeliverable.modalUnique.actions._openFrame()" class="btn btn-success">Add
+                                        Deliverable</button>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <br />
+                                </div>
+                            </div>
+
+                            <div class=row>
+
+
+                                <div class="panel panel-default" data-ng-repeat="deliverable in newRow.deliverables">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a data-role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_{{ $index }}"
+                                                data-aria-expanded="true" data-aria-controls="collapseOne"> {{deliverable.name}} </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse_{{ $index }}" data-ng-class="{ in : $index == 0 }" class="panel-collapse collapse" data-role="tabpanel" data-aria-labelledby="headingOne" >
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                   <img src="../images/user1.png" height="50px" width="50px" alt="user"/> Responsable : <i> Name of responsable...</i>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <button type="button" data-ng-click="manageDeliverable.modalUnique.actions._openFrame()"
+                                                        class="btn btn-info">Edit Deliverable</button>
+                                                    <button type="button" data-ng-click="manageDeliverable.modalUnique.actions._openFrame()"
+                                                        class="btn btn-danger">Delete Deliverable</button>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <br />
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <uib-progressbar class="progress-striped active" max="100" value="20" type="info">
+                                                        <i>20 / 100</i> </uib-progressbar>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        Status : <i> Status</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        Date of Start : <i> {{deliverable.dateStart | date:'dd/MM/yyyy'}} </i>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        Date of End : <i> {{deliverable.dateEnd | date:'dd/MM/yyyy'}}</i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        New Date of New Start : <i> {{deliverable.dateNewStart | date:'dd/MM/yyyy'}} </i>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        New Date of End : <i> {{deliverable.dateNewEnd | date:'dd/MM/yyyy'}} </i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        Numerical Domain : <i> Numerical domain ... </i>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        Activity Type : <i> Activity type ... </i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        Supplier : <i> Supplier ... </i>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        Customer <i> Customer ... </i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- **************************************************************   MODAUX   ******************************************************************************** -->
+
+        <!-- MODAL TO ADD OR EDIT OR DELETE A PROJECT -->
+        <div id="modalProjectId" class="modal fade" style="margin: 0px !important; display: none;" tabindex="-1" data-role="dialog"
+            data-aria-labelledby="modalActionLabel" data-aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h3 class="modal-title">Project</h3>
+                </div>
+
+                <form name="formProject">
+
+                    <!-- FOR NAME OF PROJECT -->
+                    <div class="form-group col-md-12">
+                        <label for="projectsDeliverables-name" class="control-label" data-ng-class="{'has-error' : !projectsDeliverables.name}">Name
+                            : <input name="name" data-ng-model="projectsDeliverables.name" type="text" class="form-control"
+                            id="projectsDeliverables-name" placeholder="Ex: Project 1" data-ng-required="true" data-tooltip-trigger="mouseenter"
+                            data-tooltip-enable="!projectsDeliverables.name">
+                        </label>
+                    </div>
+
+                    <!-- FOR RESPONSABLE OF PROJECT -->
+                    <div class="form-group col-md-12">
+                        <label for="projectsDeliverables-responsable" class="control-label"
+                            data-ng-class="{'has-error' : !projectsDeliverables.responsable}">Responsable : <ui-select
+                                ng-model="projectsDeliverables.responsable" style="min-width: 500px;"> <ui-select-match
+                                placeholder="Select a person in the list or search his name/firstname...">{{
+                            projectsDeliverables.responsable.login}}</ui-select-match> <ui-select-choices
+                                repeat="responsable in usersTab  | propsFilter: {name: $select.search, login: $select.search, firstName: $select.search}">
+                            <div data-ng-bind-html="responsable.login | highlight: $select.search"></div>
+                            <small> Name : <span data-ng-bind-html="responsable.name | highlight: $select.search"></span> <span
+                                data-ng-bind-html="responsable.firstName | highlight: $select.search"></span>
+                            </small> </ui-select-choices> </ui-select>
+                        </label>
+                    </div>
+
+                </form>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-ng-click="manageProject.modalUnique.actions._cancelFrame()"
+                        data-ng-disabled="formProject.$invalid">OK</button>
+                    <button class="btn btn-warning" data-ng-click="manageProject.modalUnique.actions._cancelFrame()">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL TO ADD OR EDIT OR DELETE A PROJECT -->
+
+        <!-- MODAL TO ADD OR EDIT OR DELETE A DELIVERABLE-->
+        <div id="modalDeliverableId" class="modal fade" style="margin: 0px !important; display: none;" tabindex="-1" data-role="dialog"
+            data-aria-labelledby="modalActionLabel" data-aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <h3 class="modal-title">Deliverable</h3>
+                </div>
+
+                <form name="formDeliverable">
+                    <!-- FOR NAME OF DELIVERABLE -->
+                    <div class="form-group col-md-12">
+                        <label for="projectsDeliverables-name" class="control-label" data-ng-class="{'has-error' : !projectsDeliverables.name}">Name
+                            : <input name="name" type="text" class="form-control" id="projectsDeliverables-name" placeholder="Ex: Project 1"
+                            data-ng-required="true" data-tooltip-trigger="mouseenter" data-tooltip-enable="!projectsDeliverables.name">
+                        </label>
+                    </div>
+
+                    <!-- FOR RESPONSABLE OF DELIVERABLE -->
+                    <div class="form-group col-md-12">
+                        <label for="projectsDeliverables-responsable" class="control-label"
+                            data-ng-class="{'has-error' : !projectsDeliverables.responsable}">Responsable : <ui-select
+                                ng-model="projectsDeliverables.responsable" style="min-width: 500px;"> <ui-select-match
+                                placeholder="Select a person in the list or search his name/firstname...">{{
+                            projectsDeliverables.responsable.login}}</ui-select-match> <ui-select-choices
+                                repeat="responsable in usersTab  | propsFilter: {name: $select.search, login: $select.search, firstName: $select.search}">
+                            <div data-ng-bind-html="responsable.login | highlight: $select.search"></div>
+                            <small> Name : <span data-ng-bind-html="responsable.name | highlight: $select.search"></span> <span
+                                data-ng-bind-html="responsable.firstName | highlight: $select.search"></span>
+                            </small> </ui-select-choices> </ui-select>
+                        </label>
+                    </div>
+
+                    <!-- FOR DATE OF START OF DELIVERABLE -->
+                    <div class="form-group col-md-6">
+                        <label for="projectsDeliverables-dateStart" class="control-label"> Date of Start (expected): <md-datepicker
+                                ng-model="projectsDeliverable.dateStart" md-placeholder="Ex: mm/dd/yyyy"></md-datepicker> <!-- md-date-locale="en_UK" -->
+                        </label>
+                    </div>
+                    <!-- FOR DATE OF END OF DELIVERABLE -->
+                    <div class="form-group col-md-6">
+                        <label for="projectsDeliverables-dateStart" class="control-label"> Date of End (expected): <md-datepicker
+                                ng-model="projectsDeliverable.dateEnd" md-placeholder="Ex: mm/dd/yyyy"></md-datepicker>
+                        </label>
+                    </div>
+
+                    <div class="col-md-12">
+                        <br />
+                    </div>
+
+                    <!-- FOR NEW DATE OF START OF DELIVERABLE -->
+                    <div class="form-group col-md-6">
+                        <label for="projectsDeliverables-dateStart" class="control-label"> New Date of Start : <md-datepicker
+                                ng-model="projectsDeliverable.dateNewStart" md-placeholder="Ex: mm/dd/yyyy"></md-datepicker> <!-- md-date-locale="en_UK" -->
+                        </label>
+                    </div>
+                    <!-- FOR DATE OF END OF DELIVERABLE -->
+                    <div class="form-group col-md-6">
+                        <label for="projectsDeliverables-dateStart" class="control-label"> New Date of End : <md-datepicker
+                                ng-model="projectsDeliverable.dateNewEnd" md-placeholder="Ex: mm/dd/yyyy"></md-datepicker>
+                        </label>
+                    </div>
+
+                    <div class="col-md-12">
+                        <br />
+                    </div>
+
+                    <!-- FOR NUMERICAL DOMAIN -->
+                    <div class="form-group col-md-6">
+                        <label class="control-label"> Numerical Domain : <input name="name" type="text" class="form-control"
+                            placeholder="Ex: PLM">
+                        </label>
+                    </div>
+                    <!-- FOR NUMERICAL DOMAIN -->
+                    <div class="form-group col-md-6">
+                        <label class="control-label"> Activity Type : <input name="name" type="text" class="form-control"
+                            placeholder="Example...">
+                        </label>
+                    </div>
+                </form>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-ng-click="manageDeliverable.modalUnique.actions._cancelFrame()"
+                        data-ng-disabled="formProject.$invalid">OK</button>
+                    <button class="btn btn-warning" data-ng-click="manageDeliverable.modalUnique.actions._cancelFrame()">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL TO ADD OR EDIT OR DELETE OR CONSULT A DELIVERABLE -->
+    </div>
+</div>

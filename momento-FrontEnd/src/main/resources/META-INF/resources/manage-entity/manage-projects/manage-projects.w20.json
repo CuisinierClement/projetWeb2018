@@ -1,0 +1,42 @@
+{
+    "id":"manage-projects",
+    "name":"Manage Projects",
+    "modules":{
+        "manageProjects":{
+            "path":"{manage-projects}/modules/manageProjects",
+            "autoload":true,
+            "config": {
+                "apiUrl": "${seed-rest-path-slash}"
+            }
+        },
+        "styles": {
+            "path":"[css]!{manage-projects}/styles/styles",
+            "autoload": true
+        }
+    },
+    "i18n":{
+        "en":[
+            "{manage-projects}/i18n/messages-en.json"
+        ]
+    },
+    "routes":{
+        "/home":{
+            "templateUrl":"{manage-projects}/views/manage-projects-home.html",
+            "controller":"ProjectsManagementController"
+        },
+        "/home2":{
+            "templateUrl":"{manage-projects}/views/manage-projects-home-2.html",
+            "controller":"ProjectsManagementController"
+        }
+    },
+    "requireConfig":{
+        "paths":{
+            "{angular-animate}":"${components-path:bower_components}/angular-animate"
+        },
+        "shim":{
+            "{angular-animate}/angular-animate":[
+                "{angular}/angular"
+            ]
+        }
+    }
+}

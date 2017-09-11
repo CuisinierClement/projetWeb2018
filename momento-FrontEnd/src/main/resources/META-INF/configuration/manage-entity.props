@@ -1,0 +1,50 @@
+[org.seedstack.seed]
+core.application-id = manage-entity
+core.application-name = Managing the Entity
+
+[org.seedstack]
+jdbc.datasources = test-ds
+jpa.units = manage-domain
+
+####################################################################
+# Persistence
+####################################################################
+
+####################################################################
+# Configure the application datasource
+[org.seedstack.jdbc.datasource.test-ds]
+#provider = HikariDataSourceProvider
+#driver = org.hsqldb.jdbcDriver
+#url = jdbc:hsqldb:mem:manage
+#user = sa
+#password =
+#property.sql.enforce_strict_size = true
+
+#case Mysql
+driver = com.mysql.jdbc.Driver
+url = jdbc:mysql://localhost:3306/mdepi2
+#url = jdbc:mysql://localhost:3306/emd?characterEncoding=utf8
+user = mdepi201
+password = mdepi201
+property.sql.enforce_strict_size = true
+
+####################################################################
+# Configure the ecommerce JPA unit
+
+[org.seedstack.jpa.unit.manage-domain]
+datasource = test-ds
+
+#case hsqldb
+#property.hibernate.dialect = org.hibernate.dialect.HSQLDialect
+#property.hibernate.hbm2ddl.auto = update
+
+#Mysql case
+property.hibernate.dialect = org.hibernate.dialect.MySQLDialect
+property.hibernate.hbm2ddl.auto = update
+
+transaction-type = RESOURCE_LOCAL
+
+# Define the JPA unit for classes under this package
+[com.inetpsa.pi201.domains.manageprojects.model.manageprojectsbudgetsresources.*]
+jpa-unit = manage-domain
+

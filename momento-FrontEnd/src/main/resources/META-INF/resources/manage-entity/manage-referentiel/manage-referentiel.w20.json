@@ -1,0 +1,27 @@
+{
+    "id":"manage-referentiel",
+    "name":"Manage Referentiel",
+    "modules":{
+        "manageReferentiel" : {
+            "path":"{manage-referentiel}/modules/manageReferentiel",
+            "autoload": true
+        }
+    },
+    "i18n": {
+        "en": [ "{manage-referentiel}/i18n/messages-en.json" ]
+    },
+    "routes":{
+        "/home":{
+            "templateUrl":"{manage-referentiel}/views/manage-referentiel-home.html",
+            "controller":"ReferentielManagementController",
+            "category":"MANAGEREFERENTIEL",
+            "sortKey":1
+        },
+        "/add":{
+            "templateUrl":"{manage-referentiel}/views/manage-referentiel-home.html",       
+            "controller":"ReferentielManagementController",
+            "category":"MANAGEREFERENTIEL",
+            "sortKey":2
+        }
+    }
+}
