@@ -1,0 +1,8 @@
+# Put configuration in this file
+
+[org.seedstack.seed.core]
+application-id = manageEntity-Web
+application-name = Manage Entity Site
+
+# This empty section resets to keys without prefix
+[]

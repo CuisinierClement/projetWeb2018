@@ -1,0 +1,11 @@
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\project\ProjectFactory.class
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\project\ProjectFactoryDefault.class
+com\inetpsa\pi201\domains\manageprojects\services\user\UserService.class
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\user\User.class
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\project\Deliverable.class
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\project\Project.class
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\project\ProjectRepository.class
+com\inetpsa\pi201\domains\manageprojects\services\project\ProjectService.class
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\user\UserFactory.class
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\user\internal\UserFactoryDefault.class
+com\inetpsa\pi201\domains\manageprojects\model\manageprojectsbudgetsresources\user\UserRepository.class

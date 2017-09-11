@@ -1,0 +1,11 @@
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\data\user\UserDTO.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\services\project\internal\ProjectServiceImpl.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\data\project\ProjectDTO.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\repositories\jpa\user\UserRepositoryImpl.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\data\project\ProjectDataImporter.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\data\user\UserDataImporter.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\data\project\DeliverableDTO.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\data\user\UserDTOAssembler.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\repositories\jpa\project\ProjectRepositoryImpl.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\infrastructure\data\project\ProjectDTOAssembler.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-JpaRepository\src\main\java\com\inetpsa\pi201\domains\manageprojects\services\user\internal\UserServiceImpl.java

@@ -1,0 +1,11 @@
+com\inetpsa\pi201\domains\manageprojects\infrastructure\data\project\DeliverableDTO.class
+com\inetpsa\pi201\domains\manageprojects\infrastructure\data\project\ProjectDTO.class
+com\inetpsa\pi201\domains\manageprojects\services\user\internal\UserServiceImpl.class
+com\inetpsa\pi201\domains\manageprojects\infrastructure\data\user\UserDataImporter.class
+com\inetpsa\pi201\domains\manageprojects\services\project\internal\ProjectServiceImpl.class
+com\inetpsa\pi201\domains\manageprojects\infrastructure\data\project\ProjectDataImporter.class
+com\inetpsa\pi201\domains\manageprojects\infrastructure\repositories\jpa\project\ProjectRepositoryImpl.class
+com\inetpsa\pi201\domains\manageprojects\infrastructure\data\user\UserDTO.class
+com\inetpsa\pi201\domains\manageprojects\infrastructure\repositories\jpa\user\UserRepositoryImpl.class
+com\inetpsa\pi201\domains\manageprojects\infrastructure\data\project\ProjectDTOAssembler.class
+com\inetpsa\pi201\domains\manageprojects\infrastructure\data\user\UserDTOAssembler.class

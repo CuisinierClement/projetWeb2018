@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.inetpsa.pi201.manageprojects.rest.project.ProjectResourceIT
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.424 sec - in com.inetpsa.pi201.manageprojects.rest.project.ProjectResourceIT

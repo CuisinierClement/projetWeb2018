@@ -1,0 +1,27 @@
+{
+    "w20-core":{
+        "modules":{
+            "application":{
+                "home":"/manage/home"
+            },
+            "security":{
+                
+            },
+            "notifications":{
+                "position":"center"
+            }
+        }
+    },
+    "manage":{
+        
+    },
+    "manage-projects":{
+        
+    },
+    "manage-users":{
+        
+    },
+    "manage-referentiel":{
+        
+    }
+}

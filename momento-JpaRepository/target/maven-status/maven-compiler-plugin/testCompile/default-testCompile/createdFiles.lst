@@ -1,0 +1,4 @@
+com\inetpsa\pi201\manageprojects\infrastructure\repositories\jpa\project\ProjectRepositoryImplIT.class
+com\inetpsa\pi201\manageprojects\services\ProjectServiceIT.class
+com\inetpsa\pi201\manageprojects\services\UserServiceIT.class
+com\inetpsa\pi201\manageprojects\infrastructure\repositories\jpa\project\UserRepositoryImplIT.class

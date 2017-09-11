@@ -1,0 +1,22 @@
+{
+    "id":"manage-users",
+    "name":"Manage Users",
+    "modules":{
+        "manageUsers" : {
+            "path":"{manage-users}/modules/manageUsers",
+            "autoload": true,
+            "config": {
+                "apiUrl": "${seed-rest-path-slash}"
+            }
+        }
+    },
+    "i18n": {
+        "en": [ "{manage-users}/i18n/messages-en.json" ]
+    },
+    "routes":{
+        "/home":{
+            "templateUrl":"{manage-users}/views/manage-users-home.html",
+            "controller":"UsersManagementController"
+        }
+    }
+}

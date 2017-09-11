@@ -1,0 +1,80 @@
+<div align=center>
+    <h1>{{ 'application.view.manage-users.home' | localize }}</h1>
+
+    <div class="row">
+        <div class="col-md-7"></div>
+        <div class="col-md-5">
+            <button type="button" data-ng-click="manageUser.modalUnique.actions._showUserModal('add', 'Add an User')" class="btn btn-success">Add User</button>
+            <button type="button" data-ng-click="manageUser.modalUnique.actions._showUserModal('edit','Edit an User')" class="btn btn-info" data-ng-disabled="haveNoRowSelected">Edit User</button>
+            <button type="button" data-ng-click="manageUser.modalUnique.actions._showUserModal('delete', 'Delete this user?')" class="btn btn-danger" data-ng-disabled="haveNoRowSelected">Delete User</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <br />
+        </div>
+    </div>
+
+    <!--  Grid : display all Users -->
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="grid" data-ui-grid="gridOptions" data-ui-grid-selection data-ng-click="rowsSelected()"></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+
+    <!-- Modal to add or edit or delete a user -->
+    <div id="modalId" class="modal fade" style="margin: 0px !important; display: none;" tabindex="-1" data-role="dialog" data-aria-labelledby="modalActionLabel" data-aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">{{ modalTitle }}</h3>
+            </div>
+
+            <form name="formUser">
+                <div class="form-group col-md-12">
+                    <label for="user-login" class="control-label" data-ng-class="{'has-error' : !user.login}">Login : <input name="login"
+                        data-ng-model="user.login" type="text" class="form-control" id="user-login" placeholder="Ex: U484562" data-ng-required="true"
+                        data-ng-pattern="regexLogin" data-ng-disabled="disabledLogin" data-tooltip-trigger="mouseenter"
+                        data-tooltip-enable="!user.login">
+                    </label>
+                    <div data-role="alert">
+                        <span data-ng-show="formUser.login.$invalid">Login Error!</span> 
+                        <span class="error" data-ng-show="formUser.login.$error.required"> Login is required!</span>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="user-firstname" class="control-label" data-ng-class="{'has-error' : !user.firstName}">First name : <input
+                        name="firstName" data-ng-model="user.firstName" type="text" class="form-control" id="user-firstname" placeholder="Ex: HENRI"
+                        data-ng-required="true" data-ng-pattern="regexName" data-ng-disabled="disabledFirstName" data-tooltip-trigger="mouseenter"
+                        data-tooltip-enable="!user.firstName">
+                    </label>
+                    <div data-role="alert">
+                        <span data-ng-show="formUser.firstName.$invalid">First name Error!</span> 
+                        <span class="error" data-ng-show="formUser.firstName.$error.required"> First name is required!</span>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="user-lastname" class="control-label" data-ng-class="{'has-error' : !user.name}">Last name : <input name="name"
+                        data-ng-model="user.name" type="text" class="form-control" id="user-lastame" placeholder="Ex: DUPOND" data-ng-required="true"
+                        data-ng-pattern="regexName" data-ng-disabled="disabledName" data-tooltip-trigger="mouseenter" data-tooltip-enable="!user.name">
+                    </label>
+                    <div data-role="alert">
+                        <span data-ng-show="formUser.name.$invalid">Last name Error!</span> 
+                        <span class="error" data-ng-show="formUser.name.$error.required"> Last name is required!</span>
+                    </div>
+                </div>
+            </form>
+
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-ng-click="manageUser.modalUnique.actions._confirmUser()" data-ng-disabled="formUser.$invalid">OK</button>
+                <button class="btn btn-warning" data-ng-click="manageUser.modalUnique.actions._cancelFrame()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal to add or edit or delete a user -->
+
+</div>

@@ -1,0 +1,256 @@
+[
+    {
+        "group":"manage-domain",
+        "name":"projects",
+        "items":[
+            {
+                "name":"ATTM : Mise sur serveur DSIN",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"commande SAFRAN pour obtention licence Notify et intervention",
+                        "dateStart":"2016-01-04",
+                        "dateEnd":"2016-01-29",
+                        "dateNewStart":"2016-01-04",
+                        "dateNewEnd":"2016-01-29"
+                    },
+                    {
+                        "name":"Fourniture de jeux de test pour évaluer la performance",
+                        "dateStart":"2016-01-04",
+                        "dateEnd":"2016-01-29",
+                        "dateNewStart":"2016-01-04",
+                        "dateNewEnd":"2016-01-29",
+                        "comment":"comment 10"
+                    },
+                    {
+                        "name":"Migration des données du serveur actuel vers serveur DSIN",
+                        "dateStart":"2016-01-04",
+                        "dateEnd":"2016-03-31",
+                        "dateNewStart":"2016-01-04",
+                        "dateNewEnd":"2016-03-31",
+                        "comment":"comment 11"
+                    },
+                    {
+                        "name":"Mise à jour de l'application",
+                        "dateStart":"2016-01-04",
+                        "dateEnd":"2016-03-31",
+                        "dateNewStart":"2016-01-04",
+                        "dateNewEnd":"2016-03-31",
+                        "comment":"comment 12"
+                    }
+                ]
+            },
+            {
+                "name":"FOX - Outil Chiffrage ",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"livraisons-Outils version Finale",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30",
+                        "comment":"comment1"
+                    },
+                    {
+                        "name":"test1",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30",
+                        "comment":"comment2"
+                    },
+                    {
+                        "name":"test1",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30",
+                        "comment":"comment3"
+                    }
+                ]
+            },
+            {
+                "name":"Viewer PREEvision - Messageries fonctionnelles",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"cahier d'expression de besoin",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"PREEvision - Conception NEA",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"Coaching métier",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"B3B4 MV ",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"rédaction spec/intégration/validation",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"DOTI 6.1.1",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"Recette",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"Refonte processus Conception Faisceaux",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"Définition MIFA processus actuel",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    }
+                ]
+            },
+            {
+                "name":"DIAGALYSER V9.8 (nouveau référentiel)",
+                "responsableId":"U484014",
+                "deliverables":[
+                    {
+                        "name":"Intégration Validation - Beta test",
+                        "dateStart":"2016-01-01",
+                        "dateEnd":"2016-03-15",
+                        "dateNewStart":"2016-01-01",
+                        "dateNewEnd":"2016-03-15"
+                    },
+                    {
+                        "name":"Livraison-Outils V9.8",
+                        "dateStart":"2016-04-04",
+                        "dateEnd":"2016-04-04",
+                        "dateNewStart":"2016-03-15",
+                        "dateNewEnd":"2016-03-15"
+                    }
+                ]
+            },
+            {
+                "name":"Cotation 3D MASTER",
+                "responsableId":"U390487",
+                "deliverables":[
+                    {
+                        "name":"Développement 3D MASTER",
+                        "dateStart":"2016-03-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-03-01",
+                        "dateNewEnd":"2016-06-30"
+                    },
+                    {
+                        "name":"Recette lot 1",
+                        "dateStart":"2016-07-01",
+                        "dateEnd":"2016-07-30",
+                        "dateNewStart":"2016-07-01",
+                        "dateNewEnd":"2016-07-30"
+                    },
+                    {
+                        "name":"Développement 3D MASTER lot 2",
+                        "dateStart":"2016-07-01",
+                        "dateEnd":"2016-09-30",
+                        "dateNewStart":"2016-07-01",
+                        "dateNewEnd":"2016-09-30"
+                    }
+                ]
+            },
+            {
+                "name":"PREEVISION : Edition des messageries fonctionnelles",
+                "responsableId":"U357756",
+                "deliverables":[
+                    {
+                        "name":"Méthodologies pour conception Flexray",
+                        "dateStart":"2015-10-01",
+                        "dateEnd":"2016-03-15",
+                        "dateNewStart":"2015-10-01",
+                        "dateNewEnd":"2016-03-15"
+                    },
+                    {
+                        "name":"Méthodologies pour messageries génériques",
+                        "dateStart":"2015-10-01",
+                        "dateEnd":"2016-08-31",
+                        "dateNewStart":"2015-10-01",
+                        "dateNewEnd":"2016-03-30"
+                    },
+                    {
+                        "name":"Méthodologies pour messageries applicatives",
+                        "dateStart":"2016-01-01",
+                        "dateEnd":"2016-08-31",
+                        "dateNewStart":"2016-01-01",
+                        "dateNewEnd":"2016-06-01"
+                    },
+                    {
+                        "name":"Formations",
+                        "dateStart":"2016-03-02",
+                        "dateEnd":"2016-09-01",
+                        "dateNewStart":"2016-03-02",
+                        "dateNewEnd":"2016-06-01"
+                    }
+                ]
+            },
+            {
+                "name":"Plan de désengagement BDMUX",
+                "responsableId":"U335692",
+                "deliverables":[
+                    {
+                        "name":"Planning de désengagement BDMUX",
+                        "dateStart":"2016-06-01",
+                        "dateEnd":"2016-06-30",
+                        "dateNewStart":"2016-06-01",
+                        "dateNewEnd":"2016-06-30"
+                    },
+                    {
+                        "name":"cotation 3D MASTER",
+                        "dateStart":"2016-09-01",
+                        "dateEnd":"2016-12-16",
+                        "dateNewStart":"2016-09-01",
+                        "dateNewEnd":"2016-12-16"
+                    },
+                    {
+                        "name":"Migration LIN CMM",
+                        "dateStart":"2016-09-01",
+                        "dateEnd":"2016-12-16",
+                        "dateNewStart":"2016-09-01",
+                        "dateNewEnd":"2016-12-16"
+                    },
+                    {
+                        "name":"Migration CAN DEPOL",
+                        "dateStart":"2016-09-01",
+                        "dateEnd":"2016-12-16",
+                        "dateNewStart":"2016-09-01",
+                        "dateNewEnd":"2016-12-16"
+                    }
+                ]
+            }
+            
+        ]
+    }
+]

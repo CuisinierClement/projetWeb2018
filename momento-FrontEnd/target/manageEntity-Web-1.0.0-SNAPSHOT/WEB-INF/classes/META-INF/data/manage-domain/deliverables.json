@@ -1,0 +1,32 @@
+[
+    {
+        "group":"manage-domain",
+        "name":"deliverables",
+        "items":[
+            {
+                "name":"Compte rendu de TP1",
+                "dateStart":"2016-03-01",
+                "dateEnd":"2016-06-30",
+                "dateNewStart":"2016-03-01",
+                "dateNewEnd":"2016-06-30",
+                "parentproject":"LAB4412 : OS Temps réel"
+            },
+            {
+                "name":"Compte rendu de TP2",
+                "dateStart":"2016-07-01",
+                "dateEnd":"2016-07-30",
+                "dateNewStart":"2016-07-01",
+                "dateNewEnd":"2016-07-30",
+                "parentproject":"LAB4412 : OS Temps réel"
+            },
+            {
+                "name":"Compte rendu de Projet Final",
+                "dateStart":"2016-07-01",
+                "dateEnd":"2016-09-30",
+                "dateNewStart":"2016-07-01",
+                "dateNewEnd":"2016-09-30",
+                "parentproject":"LAB4412 : OS Temps réel"
+            }
+        ]
+    }
+]

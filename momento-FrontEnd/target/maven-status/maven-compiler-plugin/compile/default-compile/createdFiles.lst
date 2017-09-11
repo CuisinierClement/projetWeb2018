@@ -1,0 +1,15 @@
+com\inetpsa\pi201\manageprojects\rest\project\ProjectAssembler.class
+com\inetpsa\pi201\manageprojects\rest\shared\DoNotRespectRulesException.class
+com\inetpsa\pi201\manageprojects\rest\project\ProjectRepresentation.class
+com\inetpsa\pi201\manageprojects\rest\user\UserFinder.class
+com\inetpsa\pi201\manageprojects\rest\project\DeliverableRepresentation.class
+com\inetpsa\pi201\manageprojects\rest\user\UserAssembleur.class
+com\inetpsa\pi201\manageprojects\rest\shared\MandatoryDataNotFillIn.class
+com\inetpsa\pi201\manageprojects\infrastructure\finders\jpa\UserFinderJpa.class
+com\inetpsa\pi201\rest\HelloResource.class
+com\inetpsa\pi201\manageprojects\rest\user\UserRepresentation.class
+com\inetpsa\pi201\manageprojects\rest\project\ProjectResource.class
+com\inetpsa\pi201\manageprojects\infrastructure\finders\jpa\ProjectFinderJpa.class
+com\inetpsa\pi201\manageprojects\rest\shared\AlreadyExistException.class
+com\inetpsa\pi201\manageprojects\rest\user\UserResource.class
+com\inetpsa\pi201\manageprojects\rest\project\ProjectFinder.class

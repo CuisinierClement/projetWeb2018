@@ -1,0 +1,25 @@
+Main characteristics 
+- The project ha been build 
+- First of all we have built 2 separate project 
+
+
+
+
+mvn org.seedstack:seedstack-maven-plugin:generate with following options
+- web as type of project
+- com.inetpsa.pi201 as group id
+- manageEntity-Web as Id
+
+Remark : We use java 8 and UTF8 as encoding
+
+to separate integration tests and unit tests into different source folders : 
+To do that, we must complete the structure of project with IT (Integration Test) branch
+
+In eclipse :
+- modify properties.... TO COMPLETE
+
+Converted as WAR project (http://seedstack.org/getting-started/project-templates/web/)
+-- adding a src/main/webapp folder to hold the document root
+-- adding a <packaging>war</packaging> tag to the pom.xml
+-- remove the build-capule plugin execution (package goal of seedstack-maven-plugin) as this only works with standalone JAR files
+-- configuring the maven-war-plugin to ignore the absence of the web.xml file

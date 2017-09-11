@@ -1,0 +1,26 @@
+{
+    "id":"manage",
+    "name":"Manage",
+    "modules":{
+        "manageServices":{
+            "path":"{manage}/modules/services",
+            "autoload":true
+        },
+        "manage-style": {
+            "path": "[css]!{manage}/style/manage.css",
+            "autoload": true
+        },
+        "directives" :{
+            "path":"{manage}/modules/directives",
+            "autoload":true
+        }
+    },
+    "i18n":{
+        "en":["{manage}/i18n/messages-en.json"]
+    },
+    "routes":{
+        "/home":{
+            "templateUrl":"{manage}/views/manage-home.html"
+        }
+    }
+}

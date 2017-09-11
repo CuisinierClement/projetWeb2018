@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.inetpsa.pi201.manageprojects.infrastructure.finders.jpa.ProjectFinderJpaIT" time="0.241" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\bin"/>
+    <property name="java.vm.version" value="25.66-b18"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web"/>
+    <property name="java.runtime.version" value="1.8.0_66-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\U485560\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\User\ProjetEclipse\wsManageEntity\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6391026600967425447.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Eclipse_DEV/Eclipse-4-5-2-JavaXtd/jre/bin/../jre/bin/server;C:/Program Files/Eclipse_DEV/Eclipse-4-5-2-JavaXtd/jre/bin/../jre/bin;C:/Program Files/Eclipse_DEV/Eclipse-4-5-2-JavaXtd/jre/bin/../jre/lib/amd64;C:\Program Files\svn-collabnet-1.8.14\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\SysWOW64;C:\Perl\bin\;C:\Program Files (x86)\Adobe\LiveCycle ES2\Rights Management 9.0 Extensions;C:\Program Files (x86)\DiagAlyser Suite\Shared\;C:\Program Files (x86)\Microsoft Application Virtualization Client;C:\Program Files\MavenCIQ\bin\maven\bin;C:\Program Files\MavenCIQ\bin\maven3\bin;C:\Program Files\7-Zip;C:\Program Files\Eclipse_DEV\Eclipse-4-5-2-JavaXtd;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\U485560"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="U485560"/>
+    <property name="java.class.path" value="C:\Program Files\MavenCIQ\bin\maven3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s C:\Program Files\MavenCIQ\home\.m2\settings.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="fr"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_66"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\resources.jar;C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\rt.jar;C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\sunrsasign.jar;C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\jsse.jar;C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\jce.jar;C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\charsets.jar;C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\lib\jfr.jar;C:\Program Files\Eclipse_DEV\Jdks\jdk1.8\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\MavenCIQ\bin\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testfindProject" classname="com.inetpsa.pi201.manageprojects.infrastructure.finders.jpa.ProjectFinderJpaIT" time="0.241">
+    <failure message="&#10;Expecting actual not to be null" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expecting actual not to be null
+	at com.inetpsa.pi201.manageprojects.infrastructure.finders.jpa.ProjectFinderJpaIT.testfindProject(ProjectFinderJpaIT.java:96)
+</failure>
+    <system-out><![CDATA[INFO  2016-11-29 23:55:35,917 main o.s.s.core.Seed - >>> Starting Seed v2.3.0
+INFO  2016-11-29 23:55:37,639 main o.s.s.i.i.ITPlugin - Created temporary application storage directory C:\Users\U485560\AppData\Local\Temp\1480460137639-0
+INFO  2016-11-29 23:55:37,649 main o.s.s.c.i.a.ApplicationPlugin - No configuration profile selected
+INFO  2016-11-29 23:55:37,659 main o.s.s.c.i.a.ApplicationPlugin - Application info: Manage Entity Site v1.0.0
+INFO  2016-11-29 23:55:37,659 main o.s.s.c.i.a.ApplicationPlugin - Application local storage at C:\Users\U485560\AppData\Local\Temp\1480460137639-0
+INFO  2016-11-29 23:55:37,689 main o.s.w.i.W20Plugin - No servlet context detected, W20 integration disabled
+INFO  2016-11-29 23:55:37,881 main o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+INFO  2016-11-29 23:55:37,891 main o.h.Version - HHH000412: Hibernate Core {4.2.17.Final}
+INFO  2016-11-29 23:55:37,891 main o.h.c.Environment - HHH000206: hibernate.properties not found
+INFO  2016-11-29 23:55:37,891 main o.h.c.Environment - HHH000021: Bytecode provider name : javassist
+INFO  2016-11-29 23:55:37,971 main o.h.e.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: manage-domain
+	...]
+ERROR 2016-11-29 23:55:37,971 main o.h.e.Ejb3Configuration - HHH000050: Container is providing a null PersistenceUnitRootUrl: discovery impossible
+INFO  2016-11-29 23:55:38,041 main o.h.s.j.c.i.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO  2016-11-29 23:55:38,411 main o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+INFO  2016-11-29 23:55:38,601 main o.h.e.t.i.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+INFO  2016-11-29 23:55:38,611 main o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO  2016-11-29 23:55:38,851 main o.h.t.h.SchemaExport - HHH000227: Running hbm2ddl schema export
+ERROR 2016-11-29 23:55:38,852 main o.h.t.h.SchemaExport - HHH000389: Unsuccessful: alter table Project_Deliverable drop constraint FK_k2p67dj1udgubjej4li502vrh
+ERROR 2016-11-29 23:55:38,852 main o.h.t.h.SchemaExport - user lacks privilege or object not found: PUBLIC.PROJECT_DELIVERABLE
+ERROR 2016-11-29 23:55:38,852 main o.h.t.h.SchemaExport - HHH000389: Unsuccessful: alter table Project_Deliverable drop constraint FK_b4lapw77vf7qfxt9e2jy4u7h5
+ERROR 2016-11-29 23:55:38,852 main o.h.t.h.SchemaExport - user lacks privilege or object not found: PUBLIC.PROJECT_DELIVERABLE
+INFO  2016-11-29 23:55:38,872 main o.h.t.h.SchemaExport - HHH000230: Schema export complete
+INFO  2016-11-29 23:55:40,724 main o.s.s.c.i.d.DataPlugin - Importing initialization data for manage-domain.projects
+INFO  2016-11-29 23:55:40,804 main c.i.p.d.m.i.d.p.ProjectDataImporter - Clearing projects
+INFO  2016-11-29 23:55:40,815 main c.i.p.d.m.i.d.p.ProjectDataImporter - staging size: 7
+INFO  2016-11-29 23:55:40,885 main c.i.p.d.m.i.d.p.ProjectDataImporter - Import of projects completed
+INFO  2016-11-29 23:55:40,915 main o.s.s.c.i.d.DataPlugin - Importing initialization data for manage-domain.users
+INFO  2016-11-29 23:55:40,941 main c.i.p.d.m.i.d.u.UserDataImporter - Clearing users
+INFO  2016-11-29 23:55:40,965 main c.i.p.d.m.i.d.u.UserDataImporter - staging size: 450
+User.login  = 1526397 firstName = LAURANT name = HUGUES
+User.login  = 1464817 firstName = CHEN name = HUILIAN
+User.login  = 1826845 firstName = BROCHEN name = LAURENT
+User.login  = 1484014 firstName = SOUMARE name = AHMED SALEM
+User.login  = 1837234 firstName = D ANGELO name = LAURENT
+User.login  = 1433557 firstName = SUN name = MINJIE
+User.login  = U021534 firstName = BONNET name = JULIEN
+User.login  = 1166899 firstName = DE HOLANDA BARROS name = FABIO JULIANO
+User.login  = 1843074 firstName = GOMES name = JORGE
+User.login  = 1336471 firstName = DOUDOU name = HERVE
+User.login  = 1199438 firstName = FAVAUT name = LAURENT
+User.login  = 1394572 firstName = KANTARDJIAN name = NICOLAS
+User.login  = P085883 firstName = OGER name = PASCAL
+User.login  = 1808656 firstName = SOLGADI name = THIERRY
+User.login  = 1336705 firstName = LOUARN name = MARIE
+User.login  = 1837108 firstName = KUCZER name = ALEXANDRE
+User.login  = 1858262 firstName = DE CHEZELLES name = XAVIER
+User.login  = 1319139 firstName = GONCALVES name = THAIS
+User.login  = 1525065 firstName = COURBET name = MARC
+User.login  = 1183538 firstName = SINGER name = ARNOLD
+User.login  = 1474830 firstName = GENG name = JIDONG
+User.login  = 1849538 firstName = MIGUEL name = DANIEL
+User.login  = 1364665 firstName = MALVY name = THOMAS
+User.login  = 1398011 firstName = HUANG name = WEN XIN
+User.login  = 1329728 firstName = BOISLEUX name = FABRICE
+User.login  = 1468443 firstName = CHEN name = ZHIQI
+User.login  = 1150339 firstName = COURTOUT name = JULIEN
+User.login  = 1198734 firstName = GREVILLOT name = STEPHANE
+User.login  = 1391009 firstName = FU name = LIANG JIAN
+User.login  = 1170408 firstName = VIGNIER name = SEBASTIEN
+User.login  = 1337372 firstName = GRAMOND name = FRANCOIS
+User.login  = 1333483 firstName = DUSSERRE name = OLIVIER
+User.login  = 1334797 firstName = COLARUSSO name = CARMINE
+User.login  = 1102821 firstName = CHARLES name = LUDOVIC
+User.login  = 1808192 firstName = VALENTIN name = MARTIAL
+User.login  = 1807956 firstName = PERON name = RODOLPHE
+User.login  = 1361266 firstName = LIN name = XUAN
+User.login  = 1261706 firstName = PILLOT name = NICOLAS
+User.login  = 1364200 firstName = YUAN name = CHUANYOU
+User.login  = 1455691 firstName = WANG name = WENJIE
+User.login  = 1376181 firstName = ZHOU name = HUAN
+User.login  = 1416255 firstName = SILVA name = MARCELA
+User.login  = 1376179 firstName = CHEN name = ZHI QI
+User.login  = 1394882 firstName = GONG name = RUI RUI
+User.login  = 1176407 firstName = RICHARD name = SEBASTIEN
+User.login  = 1453944 firstName = SOUTO name = VICTOR
+User.login  = 1768752 firstName = MAITRE name = FREDERIC
+User.login  = 1481498 firstName = ZHANG name = CUIXIA
+User.login  = 1336330 firstName = FERNANDES name = JORGE
+User.login  = 1228147 firstName = CALIMIA name = RODRIGUE
+User.login  = PG28562 firstName = MARTINEZ name = MANUEL
+User.login  = 1186821 firstName = SULLET name = XAVIER
+User.login  = 1705163 firstName = MANTION name = DIDIER
+User.login  = 1256576 firstName = ANAMOUTOU name = JEAN LUDOVIC
+User.login  = 1221196 firstName = CHANTEUR name = ISABELLE
+User.login  = 1516080 firstName = DUPONT name = YVES
+User.login  = 1217882 firstName = ROBERT name = REGIS
+User.login  = 1523389 firstName = KUBICKI name = PHILIPPE
+User.login  = 1526894 firstName = LAMIREL name = NATHALIE
+User.login  = 1863163 firstName = COLLET name = SEBASTIEN
+User.login  = 1452667 firstName = FAN name = LUE
+User.login  = PG09610 firstName = GOMEZ name = JOSE MARIA
+User.login  = 1230359 firstName = THOMAS name = OLIVIER
+User.login  = 1188432 firstName = BEAUSSART name = STEPHANE
+User.login  = 1888549 firstName = LE GALL name = OLIVIER
+User.login  = 1403608 firstName = SHI name = BIN
+User.login  = 1863191 firstName = SELAS name = FREDERIC
+User.login  = 1211830 firstName = GUIDEZ name = FREDERIC
+User.login  = 1363213 firstName = BRASAO name = LEANDRO
+User.login  = U077185 firstName = MOHAMADOUISA name = NASIME
+User.login  = 1784494 firstName = CLAVIER name = REGIS
+User.login  = 1218476 firstName = SAVAUX name = ALEXANDRE
+User.login  = 1867831 firstName = GESLIN name = PATRICK
+User.login  = 1493919 firstName = THALA name = AYOUB
+User.login  = 1225234 firstName = DUBERNARD name = ALEXIS
+User.login  = 1205256 firstName = ALMERAS name = OLIVIER
+User.login  = 1107650 firstName = DUFOUR name = MARIE
+User.login  = 1377791 firstName = YUAN name = JIA LIANG
+User.login  = 1393987 firstName = ZHOU name = JI
+User.login  = 1402046 firstName = BRECHARD name = ERIC
+User.login  = 1321222 firstName = LAFORGE name = THIERRY
+User.login  = 1363178 firstName = COUERY name = AURELIE
+User.login  = 1329998 firstName = ROBLOT name = RODOLPHE
+User.login  = 1948678 firstName = SCHWOERER name = OLIVIER
+User.login  = 1245807 firstName = MONTREUIL name = MICKAEL
+User.login  = 1353866 firstName = VELTZ name = FREDERIC
+User.login  = 1470271 firstName = LI name = XIAOYU
+User.login  = 1386049 firstName = MOLIN name = YOANN
+User.login  = U066751 firstName = DUMAS name = YANNICK
+User.login  = 1152925 firstName = CARTIER name = PHILIPPE
+User.login  = 1524735 firstName = LAMBOLEY name = THIERRY
+User.login  = 1331244 firstName = FOURMESTRAUX name = HUGUES
+User.login  = 1182395 firstName = KERNE name = GERALDINE
+User.login  = 1348455 firstName = DI LIBERO name = MARIANO
+User.login  = 1463920 firstName = MOINE name = THIERRY
+User.login  = 1455770 firstName = VAZQUEZ ACOSTA name = EDUARDO
+User.login  = 1466988 firstName = WANG name = LONG
+User.login  = 1324006 firstName = LE FAUCHEUR name = NICOLAS
+User.login  = 1332749 firstName = SHENG name = TAO
+User.login  = 1335187 firstName = NDOYE name = MAMADOU MOUSTAPHA
+User.login  = 1470455 firstName = LI name = DONG
+User.login  = 1386816 firstName = DUQUENE name = PIERRE
+User.login  = 1354374 firstName = BECKER name = LAETITIA
+User.login  = 1800585 firstName = PITZ name = WILFRIED
+User.login  = 1418952 firstName = GARCIA name = PATRICK
+User.login  = 1477827 firstName = MA name = CHENJIE
+User.login  = 1193444 firstName = GUYON name = JULIEN
+User.login  = 1811295 firstName = FAIVRE name = ANTHONY
+User.login  = 1821859 firstName = LORNE name = AGNES
+User.login  = 1407257 firstName = LERCH name = PASCAL
+User.login  = U086984 firstName = SCHNURIGER name = DAMIEN
+User.login  = 1189296 firstName = VALDENAIRE name = GILLES
+User.login  = 1361267 firstName = ZHANG name = LEI
+User.login  = 1769581 firstName = ROCHE name = EMMANUEL
+User.login  = 1226674 firstName = MOULEDOUS name = PHILIPPE
+User.login  = 1372127 firstName = NDOUR name = MARIE-JEANNE
+User.login  = U024770 firstName = FLEURETTE name = BENOIT
+User.login  = 1467443 firstName = ZHANG name = PEIZHI
+User.login  = 1823661 firstName = ROUXEL name = HERVE
+User.login  = 1526369 firstName = GOVART name = JEROME
+User.login  = 1456118 firstName = WANG name = SHENGQIANG
+User.login  = U049311 firstName = LECLERC name = ANTHONY
+User.login  = 1103497 firstName = JOURDAN name = LUDOVIC
+User.login  = 1426723 firstName = LI name = YAN
+User.login  = 1449821 firstName = XIAO name = PENG
+User.login  = 1525536 firstName = CHASTRES name = YANNICK
+User.login  = U082928 firstName = RIEUX name = SEBASTIEN
+User.login  = 1185583 firstName = GARNIT name = SADOK
+User.login  = 1815572 firstName = TRASSARD name = CHRISTOPHE
+User.login  = P052796 firstName = GULDEMANN name = PHILIPPE
+User.login  = 1329053 firstName = NOCQUET name = CECILE
+User.login  = 1220914 firstName = JEANDEL name = OLIVIER
+User.login  = 1809459 firstName = TASTAYRE name = FREDERIC
+User.login  = 1337530 firstName = GLENISSON name = JEROME
+User.login  = 1334496 firstName = SAUVAGEOT name = SEBASTIEN
+User.login  = 1525014 firstName = GONZALES name = LAURENT
+User.login  = 1806194 firstName = BALTOLU name = THOMAS
+User.login  = 1351812 firstName = DELETTE name = LOIC
+User.login  = 1523361 firstName = SAVONET name = THIERRY
+User.login  = P084332 firstName = ANGEBAUD name = PASCAL
+User.login  = 1469343 firstName = XIE name = JIANWU
+User.login  = 1336470 firstName = LAFFITE name = JEROME
+User.login  = 1806324 firstName = GINTRAND name = JEROME
+User.login  = 1266443 firstName = GUYONNET name = FLORENT
+User.login  = 1437864 firstName = TANG name = YIMING
+User.login  = 1330867 firstName = ROMAIN name = NICOLAS
+User.login  = 1239213 firstName = COUTO DA COSTA name = ANTONIO
+User.login  = 1851803 firstName = BAGOT name = JEAN SEBASTIEN
+User.login  = P065322 firstName = BASSET name = DIDIER
+User.login  = 1196116 firstName = RUMEAU name = VINCENT
+User.login  = 1390487 firstName = DE BENNETOT name = ISAURE
+User.login  = 1881474 firstName = MONRIQUE name = HERVE
+User.login  = 1164396 firstName = CAVAROC name = SYLVAIN
+User.login  = 1468627 firstName = MAYER name = LORRAINE
+User.login  = 1322342 firstName = BEIGE name = JEAN CHRISTOPHE
+User.login  = 1330923 firstName = FERREIRE name = VICTOR
+User.login  = 1495187 firstName = JIANG name = HUAICHEN
+User.login  = 1390384 firstName = PICHOT name = NICOLAS
+User.login  = 1526971 firstName = FICHOT name = ALAIN
+User.login  = 1349165 firstName = DI SANTO name = MARIO ALBERTO
+User.login  = 1523024 firstName = BRUCHON name = JEAN FRANCOIS
+User.login  = 1367007 firstName = CAO name = FEI
+User.login  = 1405057 firstName = BURKHART name = STEPHANE
+User.login  = 1366060 firstName = TARRIO name = ANDRES
+User.login  = 1402294 firstName = DAUBIAN DELISLE name = BERTRAND
+User.login  = 1410317 firstName = CASTELLI name = ALEXANDRE
+User.login  = 1467967 firstName = SARR name = PAPADOUDOU
+User.login  = 1433558 firstName = SHI name = WEIGANG
+User.login  = 1225783 firstName = AZEVEDO name = THAISA
+User.login  = 1807623 firstName = COUSIN name = STEPHANIE
+User.login  = 1245916 firstName = HAKIL name = NORDINE
+User.login  = 1830892 firstName = SAVARY name = JACQUES OLIVIER
+User.login  = 1173388 firstName = SVETLIK name = MARTIN
+User.login  = 1811081 firstName = BUTET name = EMMANUEL
+User.login  = 1358735 firstName = SORRENTINO name = DIDIER
+User.login  = 1804703 firstName = ANTONI name = EMMANUEL
+User.login  = 1203191 firstName = MEREY MARZAT name = MATTHIEU
+User.login  = 1416170 firstName = SCALESCIANI name = PABLO
+User.login  = 1350918 firstName = AGUILO name = PABLO
+User.login  = 1329061 firstName = DE OLIVEIRA PEREIRA name = DAVID
+User.login  = 1708254 firstName = GUINGAND name = FREDERIC
+User.login  = 1398835 firstName = VICAIGNE name = AURELIEN
+User.login  = 1481572 firstName = GALLO name = ADRIEN
+User.login  = 1232147 firstName = PLASSAIS name = PIERRE
+User.login  = 1119635 firstName = HENRICI name = RODOLPHE
+User.login  = 1354365 firstName = MOUSO name = AGUSTIN
+User.login  = 1468632 firstName = ROCK name = KEVIN
+User.login  = 1323139 firstName = KHEMIRI name = KARIM
+User.login  = 1230676 firstName = JUNIOR name = HOMERO FRANCISCO
+User.login  = 1214791 firstName = EVRARD name = VINCENT
+User.login  = 1335040 firstName = LECONTE name = FRANCOIS
+User.login  = 1852435 firstName = DESMARQUEST name = BRUNO
+User.login  = 1310678 firstName = MADELA name = PATRICK
+User.login  = 1469871 firstName = CAO name = GUIRONG
+User.login  = 1160859 firstName = COENART name = FABRICE
+User.login  = 1488939 firstName = JIANG name = JINGXUAN
+User.login  = 1165832 firstName = TRONEL name = FREDERIC
+User.login  = 1368128 firstName = BELLEMARE name = AUDREY
+User.login  = 1407849 firstName = BEN ABDESSELAM name = NAZIM
+User.login  = 1485595 firstName = PENG name = HONG
+User.login  = 1643258 firstName = GRADIT name = SEBASTIEN
+User.login  = 1453147 firstName = SUN name = LEI
+User.login  = 1195879 firstName = MISSIROLI name = MATTEO
+User.login  = 1393446 firstName = YUAN name = YAN HUI
+User.login  = 1814601 firstName = BUISSON name = SEBASTIEN
+User.login  = 1468641 firstName = MOREL name = STEPHANE
+User.login  = 1745645 firstName = PERRIN name = DIDIER
+User.login  = 1421417 firstName = YI name = WEI
+User.login  = 1250711 firstName = ZHU name = LIQING
+User.login  = 1377487 firstName = LODWITZ name = CHRISTELLE
+User.login  = 1523841 firstName = PERUS name = VINCENT
+User.login  = 1355213 firstName = MONDOLONI name = CHRISTIAN
+User.login  = 1314667 firstName = LEBRUN name = MATHIEU
+User.login  = 1727518 firstName = HAZEBROUCQ name = ANTOINE
+User.login  = 1454591 firstName = LI name = JUN
+User.login  = 1188163 firstName = NICOLET name = DAVID
+User.login  = 1353893 firstName = CHAUVET name = VINCENT
+User.login  = 1469373 firstName = ANTAR name = YAMINA
+User.login  = 1379861 firstName = CHEVIGNE name = OLIVIER
+User.login  = 1835496 firstName = ANTOINE name = NICOLAS
+User.login  = 1164456 firstName = LETEL name = VINCENT
+User.login  = 1246552 firstName = LAI name = KAM-WAH
+User.login  = 1826886 firstName = MOREAU name = ETIENNE
+User.login  = 1933128 firstName = BRIGEOT name = MICHEL
+User.login  = 1110044 firstName = CHARKAOUI name = NASSER
+User.login  = 1820164 firstName = LANOE name = ERICK
+User.login  = U098331 firstName = WATRIN name = GERALD
+User.login  = 1362353 firstName = ZUO name = CHAO
+User.login  = 1826306 firstName = HIRTZ name = PATRICK
+User.login  = 1312411 firstName = BREDA name = CYRIL
+User.login  = 1406297 firstName = ROBERT name = MURIEL
+User.login  = U087157 firstName = MINGHI name = LIONEL
+User.login  = 1231064 firstName = FAGEON name = CHRISTOPHE
+User.login  = 1420089 firstName = LI name = MIN
+User.login  = 1446208 firstName = MONTAL name = ALBAN
+User.login  = 1897134 firstName = PERICHON name = CELINE
+User.login  = 1525011 firstName = PERNEL name = SYLVAIN
+User.login  = 1221195 firstName = FRIMON name = MARC
+User.login  = 1524534 firstName = MUNINGER name = THIERRY
+User.login  = 1832421 firstName = PROST name = PIERRE
+User.login  = 1352976 firstName = FORGET name = CLAIRE
+User.login  = 1400711 firstName = DEGREMONT name = CAMILLE
+User.login  = 1816587 firstName = LEDUC name = BAPTISTE
+User.login  = 1866128 firstName = RERAT name = PIERRE
+User.login  = 1785230 firstName = SUBIGER name = FABIEN
+User.login  = 1832661 firstName = LOYER name = STEPHANE
+User.login  = 1402183 firstName = YAN name = MIN
+User.login  = 1809688 firstName = JOT name = OLIVIER
+User.login  = 1231881 firstName = ROUX name = CARINE
+User.login  = 1334726 firstName = MAUDEMAIN name = AURELIEN
+User.login  = 1424522 firstName = LI name = QING
+User.login  = 1442789 firstName = MENG name = FANBEN
+User.login  = 1766994 firstName = MAILLARD name = JEAN FRANCOIS
+User.login  = 1180766 firstName = CERBELLE name = FRANCK
+User.login  = 1525269 firstName = FORELLE name = LIONEL
+User.login  = 1416963 firstName = MIZWICKI name = ERIC
+User.login  = 1809639 firstName = DROUILLET name = FRANCK
+User.login  = PG30821 firstName = RODRIGUEZ MADRIDEJOS name = GABRIEL
+User.login  = 1329253 firstName = ATTABOU name = THAMI
+User.login  = 1324437 firstName = CAI name = HONG PING
+User.login  = 1393451 firstName = DU name = LIANG DONG
+User.login  = 1306771 firstName = MORANDO name = ADRIAN
+User.login  = 1335638 firstName = DE MARCO name = HORACIO LUIS
+User.login  = 1463880 firstName = CHEN name = ZUAN
+User.login  = 1290270 firstName = JUGLAIR PEREIRA name = ALEX SANDER
+User.login  = 1376802 firstName = SARTORI name = RENATO
+User.login  = 1799916 firstName = SZADEL name = MARYSE
+User.login  = 1263172 firstName = PETIT name = SOPHIE
+User.login  = 1195995 firstName = BLOSSIER name = JEAN EMMANUEL
+User.login  = 1336474 firstName = POUSSE name = BENOIT
+User.login  = 1212878 firstName = PATIN name = HOUDA
+User.login  = 1243730 firstName = CASSE name = JEAN PHILIPPE
+User.login  = U081300 firstName = MICHEL name = CLEMENT
+User.login  = P084873 firstName = CHESNEL name = SEBASTIEN
+User.login  = 1387872 firstName = GOUGEON name = LIONEL
+User.login  = 1806718 firstName = LAFENETRE name = OLIVIER
+User.login  = 1384869 firstName = CUI name = YANG
+User.login  = 1366761 firstName = LE CHAFFOTEC name = ALBAN
+User.login  = 1359829 firstName = ROCHDI name = ABDESSAMAD
+User.login  = 1524812 firstName = BOICHOT name = SEBASTIEN
+User.login  = 1195748 firstName = RODAYER name = TONY
+User.login  = 1323429 firstName = LU name = XIAORONG
+User.login  = 1351313 firstName = BELKHIRI name = ABDESLAM
+User.login  = 1403596 firstName = GUO name = YANG
+User.login  = 1635739 firstName = SACCO name = SYLVAIN
+User.login  = 1467684 firstName = WAN name = TIANJIA
+User.login  = 1426659 firstName = BARLOW name = HUGUES
+User.login  = 1840814 firstName = DE MONES name = EMMANUEL
+User.login  = 1336756 firstName = JI name = JUN
+User.login  = U096249 firstName = WEINGARTEN name = BRUNO
+User.login  = 1712605 firstName = TRIBUT name = SERGE
+User.login  = 1525862 firstName = FOURE name = FRANCK
+User.login  = 1476272 firstName = WANG name = SHUAI
+User.login  = 1325782 firstName = CHASSEFEYRE name = VINCENT
+User.login  = 1410900 firstName = COMERT name = GURSEL
+User.login  = 1891318 firstName = SUAREZ name = ANGEL
+User.login  = 1822870 firstName = CAZENEUVE name = FREDERIC
+User.login  = 1806489 firstName = LIENARD name = FRANCOIS
+User.login  = 1354566 firstName = RIGAUD name = JULIEN
+User.login  = 1407847 firstName = MAGNER name = LAURE
+User.login  = 1493170 firstName = NATHALIE name = WINGYEN
+User.login  = 1817066 firstName = JARDIN name = PASCAL
+User.login  = 1794438 firstName = GRAND'JANY name = FRANCK
+User.login  = 1118153 firstName = PRENEZ name = DENIS
+User.login  = 1400694 firstName = CAO name = DONGYA
+User.login  = 1486504 firstName = PENG name = SHIYU
+User.login  = 1523344 firstName = BAUMGARTNER name = JEAN MICHEL
+User.login  = 1237508 firstName = VOLANTI name = MARIO
+User.login  = 1484094 firstName = FOUCHE name = THEO
+User.login  = U030979 firstName = GUILLEMAIN name = MATTHIEU
+User.login  = 1992162 firstName = PINTO DA SILVA name = JOSE
+User.login  = 1208769 firstName = SOLIGON name = OLIVIER
+User.login  = 1385638 firstName = YU name = KEQIONG
+User.login  = 1806416 firstName = HARLE name = OLIVIER
+User.login  = U089397 firstName = LEMIERE name = JEAN YVES
+User.login  = U098436 firstName = NGUYEN name = THU VAN
+User.login  = 1467694 firstName = LIU name = XIAOPENG
+User.login  = 1458979 firstName = LIN name = LIN
+User.login  = 1327642 firstName = FUSINELLI name = SEBASTIEN
+User.login  = 1268643 firstName = FRAJER name = MIKAEL
+User.login  = 1803718 firstName = DOFAL name = FREDERIC
+User.login  = 1830139 firstName = LEPREVOST name = GILLES
+User.login  = 1802143 firstName = COUSIN name = OLIVIER
+User.login  = U072963 firstName = TREMISOT name = FRANCOIS
+User.login  = 1383797 firstName = BLEINHANT name = SEBASTIEN
+User.login  = 1427278 firstName = ZHANG name = YONGJUN
+User.login  = 1469315 firstName = MOHIUDDIN name = MOHAMMAD ALI
+User.login  = U081079 firstName = CUADRA name = JOSE
+User.login  = 1826225 firstName = LE GOFF name = GWENAEL
+User.login  = 1219441 firstName = DEVOILLE name = CEDRIC
+User.login  = 1336627 firstName = LOURENCO name = MICHAEL
+User.login  = 1523121 firstName = DAGOGNET name = CHRISTOPHE
+User.login  = 1927342 firstName = PELUAU name = ERIC
+User.login  = 1231879 firstName = LORANDINI name = DAMIEN
+User.login  = 1239934 firstName = LAURENCEAU name = MICHEL
+User.login  = 1811241 firstName = TRINQUET name = ISABELLE
+User.login  = 1927063 firstName = CONAN name = JEAN PIERRE
+User.login  = 1252966 firstName = NYAMAKU name = ERIC
+User.login  = 1747063 firstName = L HOTELLIER name = SYLVAIN
+User.login  = 1523404 firstName = GRILLOT name = DIDIER
+User.login  = 1945932 firstName = RENAUDOT name = PHILIPPE
+User.login  = 1167613 firstName = ROUSSEAU name = FRANCK
+User.login  = 1358277 firstName = CARDON name = GREGORY
+User.login  = 1469098 firstName = LI name = FANNI
+User.login  = 1951567 firstName = ROUINVY name = VINCENT
+User.login  = 1336580 firstName = BERGIER name = JEAN LUC
+User.login  = 1385551 firstName = NANA name = FRANKLIN
+User.login  = 1857468 firstName = SANDOZ name = ALEXANDRE
+User.login  = P085778 firstName = LEBLOND name = SYLVAIN
+User.login  = 1801188 firstName = PERSEVAL name = HERVE
+User.login  = 1319376 firstName = CARROUGET name = ALAIN
+User.login  = 1394893 firstName = WEI name = GUANG HUI
+User.login  = 1468436 firstName = MA name = DIANFEI
+User.login  = 1248075 firstName = GABUS name = JEAN MICHEL
+User.login  = 1374782 firstName = LEBOURG name = ANTOINE
+User.login  = 1467608 firstName = HOU name = MINGYU
+User.login  = 1357086 firstName = GUENEE name = SEBASTIEN
+User.login  = 1304455 firstName = FUSARO name = DIEGO
+User.login  = 1464918 firstName = LIU name = XIAOFEI
+User.login  = 1346147 firstName = LIU name = FANG
+User.login  = 1526386 firstName = AILLERES name = LAURENT
+User.login  = 1350545 firstName = FOJO name = RAFAEL
+User.login  = 1364734 firstName = SHEN name = QIZHUANG
+User.login  = 1349999 firstName = PHAN HUY name = LUAN
+User.login  = 1461108 firstName = GAO name = PENG
+User.login  = 1432113 firstName = LI name = LAN
+User.login  = 1702737 firstName = LAMBERT name = MICHEL
+User.login  = 1394526 firstName = WU name = BIAO
+User.login  = 1336624 firstName = MOEZ name = CHARLOTTE
+User.login  = 1443233 firstName = WANG name = YUNFENG
+User.login  = 1487048 firstName = DING name = YANG
+User.login  = 1265949 firstName = KHOUCHANE name = REDA
+User.login  = 1781846 firstName = PRIMAULT name = FABRICE
+User.login  = 1461232 firstName = CHEN name = YILI
+User.login  = 1351306 firstName = DUFOUR name = GUILLAUME
+User.login  = 1241094 firstName = GOURDIN name = AURORE
+User.login  = 1523380 firstName = CHAVY name = FREDERIC
+User.login  = 1454974 firstName = WANG name = RUIQIN
+User.login  = U080600 firstName = ROUSSEAU name = JACOB
+User.login  = 1282225 firstName = DEHEUVELS name = CHRISTIAN
+User.login  = 1407851 firstName = LEBRASSEUR name = CLEMENT
+User.login  = U087186 firstName = DEMESMAY name = FLORENT
+User.login  = U096252 firstName = BOMBE name = AURORE
+User.login  = 1379566 firstName = CHEVILLARD name = DANIEL
+User.login  = 1413675 firstName = BOURACHOT name = CEDRIC
+User.login  = 1481730 firstName = SONG name = CHAO
+User.login  = 1354222 firstName = CAROLE name = THIERRY
+User.login  = 1431354 firstName = CHENG name = ALLEN
+User.login  = 1441524 firstName = YIN name = FENG
+User.login  = 1336710 firstName = DUFETELLE name = MARC
+User.login  = 1270384 firstName = BARBOT name = YOANN
+User.login  = 1393558 firstName = MONTARNAL name = ALEXANDRE
+User.login  = 1351831 firstName = DUQUENOY name = JOSE
+User.login  = 1522166 firstName = JOLY name = PASCAL
+User.login  = 1222855 firstName = LE GUEN name = LAURENT
+User.login  = 1275650 firstName = MARIE name = SOPHIE
+User.login  = 1335692 firstName = COMTE name = RAPHAEL
+User.login  = 1412393 firstName = JIN name = YINAN
+User.login  = 1413552 firstName = GARCIA name = FRANCISCO
+User.login  = 1428977 firstName = DELOMENIE name = CHRISTOPHE
+User.login  = 1491444 firstName = WANG name = HUAXIN
+User.login  = 1354082 firstName = LACHAMBRE name = ANTHONY
+User.login  = U075520 firstName = GALERON name = PATRICE
+User.login  = 1242361 firstName = DE BAUDREUIL name = JEAN
+User.login  = 1410361 firstName = SAMSON name = THOMAS
+User.login  = U054915 firstName = BENABDERRAHMANE name = MOULOUD
+User.login  = 1846627 firstName = MEYNIEL name = OLIVIER
+User.login  = 1440743 firstName = ZHAO name = HUILAN
+User.login  = 1825947 firstName = PAZO name = RAOUL
+User.login  = 1220300 firstName = LAPEYRE name = CHRISTOPHE
+User.login  = 1282116 firstName = CRITON name = JEAN CHRISTOPHE
+User.login  = 1495796 firstName = SENDAL name = FAROUK
+User.login  = 1395446 firstName = LIN name = YIN BIN
+User.login  = 1175917 firstName = DJAMA name = ZAHIR
+User.login  = 1525502 firstName = COENT name = JEAN YVES
+User.login  = 1927041 firstName = ROY name = PHILIPPE
+User.login  = 1403609 firstName = WANG name = HAN
+User.login  = 1897064 firstName = FONT name = JEAN MICHEL
+User.login  = U063328 firstName = CLAUDE name = GAEL
+User.login  = U027851 firstName = LAFOUGE name = ROMAIN
+User.login  = 1170456 firstName = AQUILANO name = LUC
+User.login  = P084414 firstName = MERLIN name = PHILIPPE
+User.login  = 1525599 firstName = BASTIEN name = ERIC
+User.login  = 1480908 firstName = HU name = FANG
+User.login  = 1476418 firstName = SKOFCA name = ABIGAELLE
+User.login  = 1322885 firstName = BIGOT name = SYLVAIN
+User.login  = 1803270 firstName = BASILE name = VINCENT
+User.login  = 1320149 firstName = CARRIERE name = FRANCOIS
+User.login  = 1141296 firstName = CHESNE name = MICKAEL
+User.login  = 1622227 firstName = GAUTHEROT name = JEAN PIERRE
+User.login  = 1469521 firstName = OBLET name = KEVIN
+User.login  = 1449781 firstName = XIN name = YE
+User.login  = 1234722 firstName = DAUBERT name = CECILE
+User.login  = 1383692 firstName = LUX name = THIBAULT
+User.login  = 1188216 firstName = PEREIRA name = ALEXANDRE
+User.login  = 1828815 firstName = LECLERC name = CLAUDE
+User.login  = 1432689 firstName = ZHANG name = TAO
+User.login  = 1318593 firstName = DESEAU name = RICHARD
+User.login  = 1523727 firstName = ROUGER name = MARC
+User.login  = 1114135 firstName = LUCZAK name = GREGORY
+User.login  = 1783824 firstName = REAU name = CHRISTINE
+User.login  = 1405059 firstName = ISABEY name = ROMUALD
+User.login  = 1278304 firstName = LAGAND name = SEBASTIEN
+User.login  = 1424197 firstName = REN name = JIAWEI
+User.login  = 1469042 firstName = ATI name = MOHAMED
+User.login  = 1479645 firstName = ZHANG name = JINGZHE
+User.login  = 1244567 firstName = ROBERT name = RAPHAEL
+User.login  = 1377018 firstName = BORNET name = HERVE
+User.login  = 1520911 firstName = ROUSSEAU name = PASCAL
+User.login  = 1835309 firstName = GALVAO name = DAVID
+INFO  2016-11-29 23:55:41,487 main c.i.p.d.m.i.d.u.UserDataImporter - Import of users completed
+INFO  2016-11-29 23:55:41,627 main o.s.s.core.Seed - Seed started
+
+ Project Deliverables [Name= ﻿LAB4411 : Bus de terrain , Name= Compte rendu sur les réseau de terrains , dateStart= 04/01/2016 dateEnd= 29/01/2016 dateNewStart= 04/01/2016 dateNewEnd= 29/01/2016]
+
+ Project Deliverables [Name= ﻿LAB4411 : Bus de terrain , Name= Rapport de projet , dateStart= 04/01/2016 dateEnd= 29/01/2016 dateNewStart= 04/01/2016 dateNewEnd= 29/01/2016]
+The Project already exists
+
+ Project Deliverables [Name= MAN4303 : Management de projet , Name= Compte rendu sur le management de projet la gestion d'équipes , dateStart= 04/01/2016 dateEnd= 29/01/2016 dateNewStart= 04/01/2016 dateNewEnd= 29/01/2016]
+
+ Project Deliverables [Name= MAN4303 : Management de projet , Name= Rapport de projet , dateStart= 04/01/2016 dateEnd= 29/01/2016 dateNewStart= 04/01/2016 dateNewEnd= 29/01/2016]
+The Project already exists
+
+ Project Deliverables [Name= INF4039 : Programmation distribué , Name= Compte rendu de programmation sur les distribution GNU/Linux , dateStart= 04/01/2016 dateEnd= 04/01/2016 dateNewStart= 04/01/2016 dateNewEnd= 04/01/2016]
+
+ Project Deliverables [Name= LAB4412 : OS Temps réel , Name= Compte rendu sur la programmation de microcontroleur temps réel  , dateStart= 25/01/2016 dateEnd= 31/05/2016 dateNewStart= 25/01/2016 dateNewEnd= 31/05/2016]
+
+ Project Deliverables [Name= Architacture logicielle , Name= Compte rendu sur la conception  de logiciels , dateStart= 01/02/2016 dateEnd= 11/03/2016 dateNewStart= 01/02/2016 dateNewEnd= 25/03/2016]
+
+ Project Deliverables [Name= IMA4134 : Réalité virtuelle , Name= Compte rendu sur les réseau de terrains , dateStart= 29/02/2016 dateEnd= 21/03/2016 dateNewStart= 14/03/2016 dateNewEnd= 04/04/2016]
+
+ Project Deliverables [Name= INF4036 : Sécurité et Virologie , Name= Compte rendu sur les réseau de terrains , dateStart= 11/03/2016 dateEnd= 11/03/2016 dateNewStart= 25/03/2016 dateNewEnd= 25/03/2016]
+
+ Project Deliverables [Name= ICQ4168 : Réseaux de neurones , Name= Compte rendu sur les réseau de terrains , dateStart= 21/03/2016 dateEnd= 21/03/2016 dateNewStart= 04/04/2016 dateNewEnd= 04/04/2016]
+
+ Project Deliverables [Name= SYS4046 : Conception de composants programmables , Name= Compte rendu sur les réseau de terrains , dateStart= 25/01/2016 dateEnd= 31/05/2016 dateNewStart= 25/01/2016 dateNewEnd= 31/05/2016]
+
+ Project Deliverables [Name= Projet scientifique et technique de 4A , Name= Compte rendu sur les réseau de terrains , dateStart= 01/06/2016 dateEnd= 30/06/2016 dateNewStart= 01/06/2016 dateNewEnd= 30/06/2016]
+
+ Project Deliverables [Name= MAT4053 : Optimisation , Name= Compte rendu sur les réseau de terrains , dateStart= 04/01/2016 dateEnd= 20/01/2016 dateNewStart= 04/01/2016 dateNewEnd= 20/01/2016]
+
+ Project Deliverables [Name= MAT4053 : Optimisation , Name= Code source des applications de TP , dateStart= 04/01/2016 dateEnd= 20/01/2016 dateNewStart= 04/01/2016 dateNewEnd= 20/01/2016]
+The Project already exists
+
+ Project Deliverables [Name= INF4032 : Réseaux IP , Name= Compte rendu sur les réseau de terrains , dateStart= 20/01/2016 dateEnd= 29/01/2016 dateNewStart= 20/01/2016 dateNewEnd= 19/02/2016]
+
+ Project Deliverables [Name= SYS4042 : Programmation VHDL , Name= Compte rendu sur les réseau de terrains , dateStart= 04/02/2016 dateEnd= 04/02/2016 dateNewStart= 24/02/2016 dateNewEnd= 24/02/2016]
+Done: ImportProjectsFromCsvFile
+1
+2
+]]></system-out>
+  </testcase>
+</testsuite>

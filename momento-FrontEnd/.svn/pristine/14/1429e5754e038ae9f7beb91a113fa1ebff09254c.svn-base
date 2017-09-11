@@ -1,0 +1,32 @@
+[
+    {
+        "group":"manage-domain",
+        "name":"deliverables",
+        "items":[
+            {
+                "name":"Developpement 3D MASTER",
+                "dateStart":"2016-03-01",
+                "dateEnd":"2016-06-30",
+                "dateNewStart":"2016-03-01",
+                "dateNewEnd":"2016-06-30",
+                "parentproject":"Cotation 3D MASTER"
+            },
+            {
+                "name":"Recette lot 1",
+                "dateStart":"2016-07-01",
+                "dateEnd":"2016-07-30",
+                "dateNewStart":"2016-07-01",
+                "dateNewEnd":"2016-07-30",
+                "parentproject":"Cotation 3D MASTER"
+            },
+            {
+                "name":"Developpement 3D MASTER lot 2",
+                "dateStart":"2016-07-01",
+                "dateEnd":"2016-09-30",
+                "dateNewStart":"2016-07-01",
+                "dateNewEnd":"2016-09-30",
+                "parentproject":"Cotation 3D MASTER"
+            }
+        ]
+    }
+]

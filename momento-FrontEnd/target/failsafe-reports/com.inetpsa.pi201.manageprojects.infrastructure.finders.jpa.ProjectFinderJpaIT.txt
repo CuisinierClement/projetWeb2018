@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.inetpsa.pi201.manageprojects.infrastructure.finders.jpa.ProjectFinderJpaIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.605 sec <<< FAILURE! - in com.inetpsa.pi201.manageprojects.infrastructure.finders.jpa.ProjectFinderJpaIT
+testfindProject(com.inetpsa.pi201.manageprojects.infrastructure.finders.jpa.ProjectFinderJpaIT)  Time elapsed: 0.241 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting actual not to be null
+	at com.inetpsa.pi201.manageprojects.infrastructure.finders.jpa.ProjectFinderJpaIT.testfindProject(ProjectFinderJpaIT.java:96)
+

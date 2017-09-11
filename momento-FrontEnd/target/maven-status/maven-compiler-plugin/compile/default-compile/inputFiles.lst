@@ -1,0 +1,15 @@
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\user\UserAssembleur.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\infrastructure\finders\jpa\UserFinderJpa.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\project\ProjectFinder.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\infrastructure\finders\jpa\ProjectFinderJpa.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\project\ProjectRepresentation.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\shared\AlreadyExistException.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\shared\DoNotRespectRulesException.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\user\UserRepresentation.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\shared\MandatoryDataNotFillIn.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\user\UserFinder.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\project\ProjectAssembler.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\user\UserResource.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\rest\HelloResource.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\project\ProjectResource.java
+C:\User\ProjetEclipse\wsManageEntity\manageEntity-Web\src\main\java\com\inetpsa\pi201\manageprojects\rest\project\DeliverableRepresentation.java
