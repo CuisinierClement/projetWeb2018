@@ -1,0 +1,64 @@
+# Put configuration in this file
+
+
+
+[org.seedstack.seed]
+
+#Manager Transaction definition
+transaction.transaction-manager=org.seedstack.seed.transaction.internal.LocalTransactionManager
+transaction.default-handler=org.seedstack.seed.transaction.internal.LocalTransactionManager
+
+[org.seedstack]
+#Declaring the JPA Unit
+#[org.seedstack.seed] 
+jpa.units=manage-domain
+# Configure the application data source
+jdbc.datasources=test-ds
+
+####################################################################
+# Configure the application data source (change since seedStack 11.15) : here test-ds
+[org.seedstack.jdbc.datasource.test-ds]
+#provider = HikariDataSourceProvider
+#driver = org.hsqldb.jdbcDriver
+#url = jdbc:hsqldb:mem:test
+#user = sa
+#password =
+#property.sql.enforce_strict_size = true
+
+#case Mysql
+driver = com.mysql.jdbc.Driver
+url = jdbc:mysql://localhost:3306/mdepi2
+#url = jdbc:mysql://localhost:3306/emd?characterEncoding=utf8
+user = mdepi201
+password = mdepi201
+property.sql.enforce_strict_size = true
+
+
+####################################################################
+#Configuring the JPA Unit (change since seedStack 11.15)
+
+[org.seedstack.jpa.unit.manage-domain]
+datasource = test-ds
+
+#case hsqldb
+#property.hibernate.dialect = org.hibernate.dialect.HSQLDialect
+#property.hibernate.hbm2ddl.auto = update
+
+#Mysql case
+property.hibernate.dialect = org.hibernate.dialect.MySQLDialect
+property.hibernate.hbm2ddl.auto = update
+
+transaction-type = RESOURCE_LOCAL
+#shared-cache-mode = ALL
+
+# To retrieve all entities
+[com.inetpsa.pi201.domains.manageprojects.*]
+jpa-unit = manage-domain
+
+[org.seedstack.seed.security.users]
+retoucheur = retoucheur, MYPROJECT.RETROUCHEUR
+admin = password, MYPROJECT.ADMINSITRATOR
+
+[org.seedstack.seed.security.roles]
+ord-i18n.reader=MYPROJECT.RETROUCHEUR
+ord-i18n.translator=MYPROJECT.ADMINSITRATOR
