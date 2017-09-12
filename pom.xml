@@ -5,7 +5,7 @@
     <groupId>fr.esiea.momento</groupId>
     <artifactId>momento-Parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 	
 	  <modules>
     <module>momento-BackEnd</module>
