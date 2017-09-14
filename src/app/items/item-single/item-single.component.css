@@ -1,0 +1,512 @@
+body {
+  padding-top: 80px;
+  /*background: url(../img/zeldaF4.jpg) no-repeat top center;*/
+  background-color: #26160b;
+  font-family: Roboto, Arial, Helvetica, sans-serif!important;
+  color: #28170e
+}
+
+@font-face {
+  font-family: 'pokekid';
+  /*src: url(../fonts/pokemon-solid.ttf)*/
+}
+
+#tk-xs-main-title {
+  font-family: pokekid!important;
+  font-size: 20px
+}
+
+h3 {
+  font-size: 24px;
+  font-family: Bebas, Arial, Helvetica, sans-serif!important
+}
+
+::selection {
+  background-color: #8e9a24;
+  color: #fff
+}
+
+::-moz-selection {
+  background-color: #8e9a24;
+  color: #fff
+}
+
+#title h4 {
+  font-size: 14px
+}
+
+#icon-xs {
+  padding: 0
+}
+
+.separator {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.6)
+}
+
+section.container {
+  background: rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  padding-bottom: 15px
+}
+
+section.container>div>div>div>div.col-sm-12 .btn {
+  border-radius: 0
+}
+
+#title {
+  background: #97a801;
+  color: #FFF;
+  margin-bottom: 5%;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.6)
+}
+
+.back-white {
+  background: #FFF;
+  height: auto!important
+}
+
+.trame {
+  /*background: url(../img/trame.jpg) repeat-x;*/
+  width: 100%;
+  height: 16px
+}
+
+.carousel {
+  margin-bottom: 10px
+}
+
+.tk-footer {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 10px
+}
+
+footer {
+  height: auto;
+  background-color: #000;
+  color: #FFF;
+  font-size: 12px;
+  text-align: center
+}
+
+.navbar-header a {
+  font-family: Bebas, Arial, Helvetica, sans-serif;
+  font-size: 25px
+}
+
+.tk-title a {
+  font-size: 20px;
+  border-bottom: 1px solid #fff
+}
+
+.tk-title {
+  margin-bottom: 5px
+}
+
+.tk-footer a {
+  font-family: Bebas, Arial, Helvetica, sans-serif!important;
+  text-decoration: none;
+  color: #FFF
+}
+
+.tk-footer > a {
+  font-size: 15px;
+  font-family: BebasBook, Arial, Helvetica, sans-serif!important
+}
+
+.tk-footer > a > img {
+  padding-right: 5px
+}
+
+.tk-footer a:hover {
+  text-decoration: none;
+  color: #8e9a24
+}
+
+.tk-title_social a {
+  font-size: 20px;
+  border-bottom: 1px solid #8e9a24
+}
+
+.tk-title_social {
+  margin-bottom: 5px
+}
+
+.tk-social a:hover {
+  text-decoration: none;
+  color: #8e9a24
+}
+
+.tk-social > a > img {
+  padding-right: 5px
+}
+
+.tk-social img {
+  padding-bottom: 10px;
+  max-width: 100%;
+  height: auto
+}
+
+.tk-social img:hover {
+  opacity: .8
+}
+
+.tk-social {
+  text-align: center;
+  text-align: center
+}
+
+.tk-login {
+  background-color: #FFF;
+  padding: 15px
+}
+
+.tk-mostview > div {
+  background-color: #fff
+}
+
+.tk-bordermostview:not(:last-child) {
+  border-bottom: 1px solid #d9d9d9!important
+}
+
+.tk-mostview h4 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 15px
+}
+
+.tk-mostview a {
+  color: #333
+}
+
+.tk-hoverview:hover {
+  background-color: #2991d6
+}
+
+.tk-hoverview:hover h4 {
+  color: #fff
+}
+
+.tk-bordermostview img {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-right: 15%
+}
+
+#th-h3view {
+  background-color: #8e9a24;
+  border-bottom: 1px dashed #000
+}
+
+#th-h3view img {
+  width: 42px;
+  height: 42px
+}
+
+.tk-mostview img {
+  width: 85px;
+  height: 47px
+}
+
+.tk-mostview h3 {
+  font-size: 20px;
+  color: #fff;
+  line-height: 200%;
+  margin-top: 5px;
+  margin-bottom: 5px
+}
+
+.tk-mostview {
+  margin-bottom: 5%
+}
+
+header>div>div>div>div a.brand {
+  /*background: url(../img/logo_boot1.png) center -2px no-repeat;*/
+  z-index: 1500;
+  height: 80px;
+  width: 345px;
+  position: absolute;
+  max-width: 100%
+}
+
+header>div>div>div>div ul.test li {
+  width: 345px
+}
+
+.loader {
+  /*background: url(../img/loader.GIF) center no-repeat*/
+}
+
+#logo_sm {
+  /*background: url(../img/logo_boot_sm.png) center -2px no-repeat;*/
+  z-index: 1500;
+  height: 49px;
+  width: 100px;
+  position: relative;
+  max-width: 100%;
+  padding: 0
+}
+
+.videocontainer {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative
+}
+
+.videocontainer .r1 {
+  padding-bottom: 100%
+}
+
+.videocontainer iframe,
+.videocontainer embed,
+.videocontainer object {
+  width: 100%!important;
+  height: 100%!important;
+  padding-bottom: 56.25%;
+  top: 0;
+  left: 0;
+  position: absolute
+}
+
+#content img {
+  max-width: 100%!important;
+  height: auto!important
+}
+
+header .btn {
+  border-radius: 0
+}
+
+.thumbnail h3>a {
+  color: #FFF
+}
+
+.thumbnail p {
+  margin-top: 10px;
+  padding: 0 9px 9px
+}
+
+.thumbnail h3 {
+  margin: 0;
+  padding: 5px 9px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+  background: #8e9a24;
+  border-top: 4px solid #428bca
+}
+
+.thumbnail h3>img {
+  margin-right: 5px
+}
+
+.thumbnail {
+  padding: 0;
+  border: none;
+  background: #222;
+  border-radius: 0
+}
+
+.thumbnail .caption {
+  padding: 0;
+  color: #FFF
+}
+
+.th_back {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+h1 {
+  font-size: 30px;
+  font-family: Bebas, Arial, Helvetica, sans-serif
+}
+
+#fade {
+  display: none;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  z-index: 9999
+}
+
+.popup_block {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #000;
+  float: left;
+  font-size: 1.2em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  -webkit-box-shadow: 0 0 20px #000;
+  -moz-box-shadow: 0 0 20px #000;
+  box-shadow: 0 0 20px #000
+}
+
+img.btn_close {
+  float: right;
+  margin: -15px -15px 0 0
+}
+
+*html #fade {
+  position: absolute
+}
+
+*html .popup_block {
+  position: absolute
+}
+
+.navbar-nav > li > a.poplight {
+  padding-top: 0;
+  padding-bottom: 0
+}
+
+header>div>.navbar {
+  border-bottom: 5px solid #8e9a24
+}
+
+.right_pourcent {
+  margin-right: 50%
+}
+
+.btn-emeraude {
+  color: #fff;
+  background-color: #8e9a24;
+  border-color: #94a214
+}
+
+.btn-emeraude:hover,
+.btn-emeraude:focus,
+.btn-emeraude:active,
+.btn-emeraude.active,
+.open > .dropdown-toggle.btn-emeraude {
+  color: #fff;
+  background-color: #707c04;
+  border-color: #7f8926
+}
+
+.btn-emeraude:active,
+.btn-emeraude.active,
+.open > .dropdown-toggle.btn-emeraude {
+  background-image: none
+}
+
+.btn-emeraude.disabled,
+.btn-emeraude[disabled],
+fieldset[disabled] .btn-emeraude,
+.btn-emeraude.disabled:hover,
+.btn-emeraude[disabled]:hover,
+fieldset[disabled] .btn-emeraude:hover,
+.btn-emeraude.disabled:focus,
+.btn-emeraude[disabled]:focus,
+fieldset[disabled] .btn-emeraude:focus,
+.btn-emeraude.disabled:active,
+.btn-emeraude[disabled]:active,
+fieldset[disabled] .btn-emeraude:active,
+.btn-emeraude.disabled.active,
+.btn-emeraude[disabled].active,
+fieldset[disabled] .btn-emeraude.active {
+  background-color: #474f00;
+  border-color: #707c04
+}
+
+.btn-emeraude .badge {
+  color: #bcca41;
+  background-color: #fff
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  padding-left: 0
+}
+
+nav ul li {
+  float: left;
+  margin: 0 20px 0 0
+}
+
+nav ul li a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  /*background: url(../img//icons.png) no-repeat center;*/
+  border: 4px solid #8e9a24
+}
+
+nav ul li:hover a {
+  /*background: url(../img//icons.png) no-repeat center;*/
+  background-color: #d3d3d3;
+  border: 4px solid #c8d366
+}
+
+nav ul li:nth-child(1) a {
+  /*background-image: url(../img//icons.png);*/
+  background-repeat: no-repeat
+}
+
+nav ul li:nth-child(2) a {
+  /*background-image: url(../img//icon3.png);*/
+  background-repeat: no-repeat
+}
+
+nav ul li:nth-child(3) a {
+  /*background-image: url(../img//icon2.png);*/
+  background-repeat: no-repeat
+}
+
+nav ul li:nth-child(4) a {
+  /*background-image: url(../img//icon4.png);*/
+  background-repeat: no-repeat
+}
+
+nav ul li a span {
+  font: 15px Dosis, sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 250px;
+  top: 12px;
+  -webkit-transition: opacity, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  opacity: 0
+}
+
+nav ul li a:hover span {
+  opacity: 1
+}
+
+nav ul li:nth-child(1) a span {
+  color: #0F0;
+  font-weight: 700;
+  font-size: 16px;
+  text-shadow: #000 1px 1px, #000 -1px 1px, #000 -1px -1px, #000 1px -1px
+}
+
+nav ul li:nth-child(2) a span {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 16px;
+  text-shadow: #000 1px 1px, #000 -1px 1px, #000 -1px -1px, #000 1px -1px
+}
+
+nav ul li:nth-child(3) a span {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-shadow: #FFF 1px 1px, #FFF -1px 1px, #FFF -1px -1px, #FFF 1px -1px
+}
+
+nav ul li:nth-child(4) a span {
+  color: #FC0;
+  font-weight: 700;
+  font-size: 16px;
+  text-shadow: #000 1px 1px, #000 -1px 1px, #000 -1px -1px, #000 1px -1px
+}
