@@ -1,10 +1,12 @@
-<h3 [ngClass]="{ 'strike-out': !item.active }">
+<!--<h3 [ngClass]="{ 'strike-out': !item.active }">
   {{ item.title || 'missing title' }}
+
 </h3>
 
 
 <div class="card-content">
-
+  {{ item.body || 'missing body' }}<br>
+  {{ item.actor || 'missing actor' }}<br>
   Task Active?: {{ item.active }}<br>
   {{ item.timeStamp | date: 'medium' }}
 
@@ -15,4 +17,37 @@
   <span class="button is-small is-success card-footer-item" *ngIf='item.active' (click)='updateActive(false)'>Mark Complete</span>
   <span class="button is-small is-warning card-footer-item" *ngIf='!item.active' (click)='updateActive(true)'>Mark Incomplete</span>
   <span class="button is-small is-danger card-footer-item" (click)='deleteItem()'>Delete</span>
+</div>-->
+
+<div class="col-md-6 col-sm-6">
+  <div class="thumbnail">
+    <a routerLink="/item/{{item.$key}}" routerLinkActive="active">
+      <div class="imgcontainer">
+        <img src="#" data-original="http://giffiles.alphacoders.com/150/15009.gif" class="lazy">
+        <noscript>
+          <img src="http://giffiles.alphacoders.com/150/15009.gif"/>
+        </noscript>
+      </div>
+    </a>
+    <div class="caption" style="min-height: 226px;">
+      <h3 class="col-xs-12">
+        <div class="col-xs-3 row"><img src="/img/mh2.png" class="img-thumbnail" alt=""/></div>
+        <div class="col-xs-10 row">
+          <a  routerLink="/item/{{item.$key}}" routerLinkActive="active">{{ item.title || 'missing title' }}</a>
+          <p class="col-xs-12">Info - February 10, 2016, 11:05 pm</p>
+        </div>
+      </h3>
+      <p>
+        {{ item.body || 'missing body' }}...</p>
+    </div>
+    <div class="tk-bottom col-xs-12">
+      <div class="col-xs-3 row tk-border">
+        <i class="glyphicon glyphicon-envelope" style="padding-right:10px;"></i><a style="color: #FFF;"
+                                                                                   href="http://server.rachedizakaria.fr/theukid/posts/view/34#disqus_thread">0</a>
+      </div>
+      <div class="col-xs-9 col-xs-push-1">
+        Par : ADMIN
+      </div>
+    </div>
+  </div>
 </div>

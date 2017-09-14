@@ -1,4 +1,4 @@
-<top-nav></top-nav>
+<!--<top-nav></top-nav>
 
   <div class="content columns">
 
@@ -17,4 +17,192 @@
   </div>
 
 
-<footer-nav></footer-nav>
+<footer-nav></footer-nav>-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Rendre compatible avec les smartphones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <!-- Ici on génère la meta d'encodage par defaut UTF-8 car le champ est vide -->
+  <!-- Ici le TITRE est modifiable en fonction de ce qui est envoyé par le controleur ! -->
+  <title>
+  </title>
+  <link href="/favicon.ico" type="image/x-icon" rel="icon"/>
+  <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+  <script type="text/javascript"
+          src="http://gc.kis.v2.scr.kaspersky-labs.com/CCABB565-1436-2549-8493-47933DCED28A/main.js"
+          charset="UTF-8"></script>
+</head>
+
+<body>
+<app-navbar></app-navbar>
+
+<section class="container">
+  <!-- Ici se trouve l'élément de slider -->
+  <div class="row">
+    <div class="col-lg-12">
+      <!-- Ici on affiche le message flash si il y en a -->
+      <div class="row">
+        <div class="col-sm-12">
+          <!--<h1></h1>-->
+          <nav class="hidden-xs">
+            <ul>
+              <li>
+                <a href="/"><span>Les derniers articles</span></a></li>
+              <li>
+                <a href="/posts/index/3"><span>Les Tests</span></a></li>
+              <li>
+                <a href="/posts/index/4"><span>Les découvertes du moment</span></a></li>
+              <li>
+                <a href="/"><span>Les perles :D</span></a></li>
+
+            </ul>
+          </nav>
+
+
+          <div class="menu hidden">
+            <button id="filter" type="button" class="btn btn-primary btn-lg btn-block visible-xs">Filtrer la liste<span
+              class="icon_plus"></span></button>
+            <ul>
+              <li>
+                <a href="/"><img src="/img/icon_filter4.png" alt="Texte alternatif"/>Tout les articles</a></li>
+              <li>
+                <a href="/posts/index/3"><img src="/img/icon_filter3.png" alt="Texte alternatif"/>Tout les articles</a>
+              </li>
+              <li>
+                <a href="/posts/index/4"><img src="/img/icon_filter2.png" alt="Texte alternatif"/>Tout les articles</a>
+              </li>
+              <li>
+                <a href="/"><img src="/img/icon_filter1.png" alt="Texte alternatif"/>Tout les articles</a></li>
+            </ul>
+          </div>
+
+          <p>
+          </p>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <div id="content">
+            <modal></modal>
+
+            <!-- Ici, nous bouclons sur le tableau $post afin d'afficher les informations des posts -->
+            <div class="row">
+              <router-outlet></router-outlet>
+
+
+              <div class="paging col-xs-12">
+                <div class="box-footer clearfix" style="text-align: center">
+                  <ul class="pagination pagination-sm no-margin">
+                    <li class="disabled"><a>prev</a></li>
+                    <li class="active"><a>1</a></li>
+                    <li><a href="/posts/index/page:2">2</a></li>
+                    <li><a href="/posts/index/page:3">3</a></li>
+                    <li><a href="/posts/index/page:4">4</a></li>
+                    <li class="next"><a href="/posts/index/page:2" currentClass="disabled" rel="next">next</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>  <!-- Ici se trouve le contenu de la vue généré -->
+          </div>
+
+        </div>
+        <aside class="col-md-3 col-sm-12">
+          <!-- 	<div class="hidden-xs"><script id="sid0020000075265483595">(function() {function async_load(){s.id="cid0020000075265483595";s.src=(window.location.href.indexOf('file:///') > -1 ? 'http:' : '') + '//st.chatango.com/js/gz/emb.js';s.style.cssText="width:262px;height:350px;";s.async=true;s.text='{"handle":"theukid-chat","arch":"js","styles":{"a":"0084EF","b":100,"c":"FFFFFF","d":"FFFFFF","k":"0084EF","l":"0084EF","m":"0084EF","n":"FFFFFF","q":"0084EF","r":100,"t":0}}';var ss = document.getElementsByTagName('script');for (var i=0, l=ss.length; i < l; i++){if (ss[i].id=='sid0020000075265483595'){ss[i].id +='_';ss[i].parentNode.insertBefore(s, ss[i]);break;}}}var s=document.createElement('script');if (s.async==undefined){if (window.addEventListener) {addEventListener('load',async_load,false);}else if (window.attachEvent) {attachEvent('onload',async_load);}}else {async_load();}})();</script></div> -->
+          <div class="row">
+            <div class="col-xs-12 tk-mostview">
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-xs-12" id="th-h3view">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <img src="/img/felyne_mostview.gif" alt="theukid felyne"/></div>
+                      <div class="col-xs-9">
+                        <h3>Les plus lus, miaouu !</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 tk-bordermostview">
+                  <div class="row">
+
+                    <a href="/posts/view/34">
+                      <div class="row tk-hoverview">
+                        <div class="col-xs-4">
+                          <img src="/img/dofus1.jpg" alt="theukid felyne"/></div>
+                        <div class="col-xs-8">
+                          <h4>Flash Info ! Lorem Ipsum bas do rum</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-12 tk-bordermostview">
+                  <div class="row">
+                    <a href="/posts/view/33">
+                      <div class="row tk-hoverview">
+                        <div class="col-xs-4">
+                          <img src="/img/dofus1.jpg" alt="theukid felyne"/></div>
+                        <div class="col-xs-8">
+                          <h4>FLash Info ! Lorem Ipsum bas do rum</h4>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- Ici se trouve l'élément de navigation droit -->
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="col-xs-12 col-md-3 tk-footer">
+      <span class="tk-title col-xs-12"><a href="/posts/contact">CONTACT</a></span>
+      <a href="/posts/contact" class="col-xs-12">à PROPOS</a></div>
+    <div class="col-xs-12 col-md-3 tk-footer">
+      <span class="tk-title col-xs-12"><a href="/posts/contact">INFORMATIONS</a></span>
+      <a href="/posts/contact" class="col-xs-12">MENTIONS LéGALES</a> <a href="/posts/contact" class="col-xs-12">PARTENAIRES</a>
+    </div>
+    <div class="col-xs-12 col-md-3 tk-footer">
+      <span class="tk-title col-xs-12"><a href="/posts/contact">NOUS SUIVRE</a></span>
+      <a href="/recipes/view/6"><img src="/img/footer/fac.png" alt="facebook"/></a><a href="/recipes/view/6"><img
+      src="/img/footer/twi.png" alt="twitter"/></a><a href="/recipes/view/6"><img src="/img/footer/goo.png"
+                                                                                  alt="google plus"/></a><a
+      href="/recipes/view/6"><img src="/img/footer/you.png" alt="youtube"/></a></div>
+    <div class="col-xs-12 col-md-3 tk-footer">
+      <span class="tk-title col-xs-12"><a href="/posts/contact">SIGNALER UN BUG</a></span>
+      <a href="/posts/contact" class="col-xs-12">FORUM</a></div>
+    <div style="clear: both;"></div>
+    <p>Copyright © 2013-2017 Theukid | Tous droits réservés.</p>
+  </div>
+</footer>
+<!--<link rel="stylesheet" type="text/css" href="/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/modal_box.js"></script>
+<script type="text/javascript" src="/js/js_theukid.js"></script>
+<script type="text/javascript" src="/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="/js/filter.js"></script>-->
+
+
+<!--<script type="text/javascript" src="/theukid/js/jquery.min.js"></script>
+   <script type="text/javascript" src="/theukid/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="/theukid/js/modal_box.js"></script>
+   <script type="text/javascript" src="/theukid/js/js_theukid.js"></script>
+   <script type="text/javascript" src="/theukid/js/disquscount.js"></script>
+   <script type="text/javascript" src="/theukid/js/jquery.lazyload.min.js"></script>
+   <script type="text/javascript" src="/theukid/js/filter.js"></script> -->
+<script id="dsq-count-scr" src="//theukid.disqus.com/count.js" async></script>
+</body>
+</html>

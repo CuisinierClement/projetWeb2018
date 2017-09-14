@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,14 +21,23 @@ import { SharedModule } from './shared/shared.module'
 import { ItemModule } from './items/shared/item.module';
 import { UploadModule } from './uploads/shared/upload.module';
 import { UiModule } from './ui/shared/ui.module';
+import {NavbarComponent} from './navbar/navbar.component';
+
+import { AlertModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap';
+import { ItemSingleComponent } from './items/item-single/item-single.component';
 ///// End FireStarter
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
+    ItemSingleComponent
   ],
   imports: [
+    AlertModule.forRoot(),
+    ModalModule.forRoot(),
     BrowserModule,
     HttpModule,
     AppRoutingModule,
@@ -38,8 +47,7 @@ import { UiModule } from './ui/shared/ui.module';
     UiModule,
     AngularFireModule.initializeApp(firebaseConfig),
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }

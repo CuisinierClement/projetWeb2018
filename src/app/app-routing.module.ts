@@ -8,11 +8,13 @@ import { ItemsListComponent } from './items/items-list/items-list.component';
 import { ReadmePageComponent } from './ui/readme-page/readme-page.component';
 
 import { CoreModule } from './core/core.module'
+import {ItemSingleComponent} from "./items/item-single/item-single.component";
 
 const routes: Routes = [
   { path: '', component: ReadmePageComponent },
   { path: 'login', component: UserLoginComponent, },
-  { path: 'items', component: ItemsListComponent, canActivate: [AuthGuard]},
+  { path: 'items', component: ItemsListComponent},
+  { path: 'item/:id', component: ItemSingleComponent},
   { path: 'uploads', loadChildren: './uploads/shared/upload.module#UploadModule' }
   // { path: 'uploads', component: UploadsListComponent, canActivate: [AuthGuard]},
 ];
