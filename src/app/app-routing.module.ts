@@ -9,11 +9,13 @@ import { ReadmePageComponent } from './ui/readme-page/readme-page.component';
 
 import { CoreModule } from './core/core.module'
 import {ItemSingleComponent} from "./items/item-single/item-single.component";
+import {ItemAddComponent} from "./items/item-add/item-add.component";
 
 const routes: Routes = [
   { path: '', component: ReadmePageComponent },
   { path: 'login', component: UserLoginComponent, },
   { path: 'items', component: ItemsListComponent},
+  { path: 'add', component: ItemAddComponent},
   { path: 'item/:id', component: ItemSingleComponent},
   { path: 'uploads', loadChildren: './uploads/shared/upload.module#UploadModule' }
   // { path: 'uploads', component: UploadsListComponent, canActivate: [AuthGuard]},

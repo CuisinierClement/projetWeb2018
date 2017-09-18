@@ -26,14 +26,14 @@ import {NavbarComponent} from './navbar/navbar.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { ModalModule } from 'ngx-bootstrap';
 import { ItemSingleComponent } from './items/item-single/item-single.component';
+import { ItemAddComponent } from './items/item-add/item-add.component';
 ///// End FireStarter
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    ItemSingleComponent
+    NavbarComponent
   ],
   imports: [
     AlertModule.forRoot(),

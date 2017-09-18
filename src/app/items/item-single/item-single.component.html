@@ -10,7 +10,7 @@
         <div class="col-xs-12">
           <div class="row separator">
             <div class="corps-article text-enrichi-default">
-              <p *ngFor="let it of item | async">{{ it.title | async}}</p>
+              <p>{{ item | async | json }}</p>
 
               <p><img alt="" src="http://giffiles.alphacoders.com/150/15009.gif" style="height:291px; width:540px"></p>
 
