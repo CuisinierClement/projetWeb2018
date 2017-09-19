@@ -30,7 +30,7 @@ export class ChatAppComponent {
   constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
     this.items = af.list('/messages', {
       query: {
-        limitToLast: 200
+        limitToLast: 5
       }
     });
     this.user = this.afAuth.authState;
