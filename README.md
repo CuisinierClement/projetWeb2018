@@ -1,54 +1,33 @@
-# FireStarter - Angular4 + Firebase Starter App
 
-FireStarter is designed to handle the basic features most Angular+Firebase apps need. It can serve as a foundation to quickly roll out more complex features.
+Projet Web 2018 : 5 A
+------------------------------------------------------
+Groupe : 
+* Amed Soumare
+* Raphael Iancu
+* Thanh Tam Nguyen
+* Zakaria Rachedi
+* Clement Cuisinier
+-------------------------------------------------------
 
-- [Live Demo](https://firestarter-96e46.firebaseapp.com/)
-- [Lessons and Screencasts](https://angularfirebase.com)
-- [Join the Slack Team](https://join.slack.com/angularfirebase/shared_invite/MjA2NTgxMTI0MTk2LTE0OTg4NTQ4MDAtMjhhZDIzMjc0Mg)
+Date rendu : 29 Octobre 2017 à 22h
 
-## Features
+Email : projet2017@filigrane-technologie.fr
 
-- Authentication w/ Router Guard
-- Realtime Database CRUD Demo
-- File Uploads to Firebase Storage Demo
-- SASS + Bulma + FontAwesome
-- Reactive Form Validation
+Contenu : URL github + sources + readme  présentant le projet, les choix, les fonctionnalités ... + Un tuto INSTALL
 
-## Usage
+Projet
+-------------------------------------------------------
+Blog comprenant les informations sur les films et possibilité de messagerie instantanée
 
-Create an account at https://firebase.google.com/
+Technologie
+-------------------------------------------------------
+* Back : JAVA / Maven
+* Front : Angular / Bootstrap
+* BDD : Mysql
 
-- `git clone https://github.com/codediodeio/angular-firestarter.git firestarter`
-- `cd firestarter`
-- `npm install`
+* Extra : REST / JSON / JWT
 
-Create the environment files below in `src/environments/`.
-
-#### environment.ts
-```typescript
-export const environment = {
-    production: false,
-    firebaseConfig: {
-        apiKey: 'APIKEY',
-        authDomain: 'DEV-APP.firebaseapp.com',
-        databaseURL: 'https://DEV-APP.firebaseio.com',
-        storageBucket: 'DEV-APP.appspot.com'
-    }
-};
-```
-#### environment.prod.ts
-```typescript
-export const environment = {
-    production: true,
-    firebaseConfig: {
-        // same as above, or use a different firebase project to isolate environments
-    }
-};
-```
-
-And finally `ng serve`
-
-## Apps Using FireStarter in Production
-
-- [ArtiFilter](https://app.artifilter.com) - Neural Art Generator
-- [FlashLawyer](https://flashlawyer.com) - Legal Document Builder and Chatbot
+Compte The Movie Database
+-------------------------------------------------------
+Login : ProjetWebEsiea
+MDP : 2018
