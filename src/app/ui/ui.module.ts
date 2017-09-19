@@ -12,6 +12,7 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { FooterNavComponent } from './footer-nav/footer-nav.component';
 import { ReadmePageComponent } from './readme-page/readme-page.component';
 import { NavBarComponent } from './navbar/navbar.component';
+import { FilmPopularListComponent } from './films/film-popular-list/film-popular-list.component';
 
 
 
@@ -31,13 +32,15 @@ import { NavBarComponent } from './navbar/navbar.component';
     FooterNavComponent,
     UserFormComponent,
     ReadmePageComponent,
-    NavBarComponent
+    NavBarComponent,
+    FilmPopularListComponent
   ],
   exports: [
     TopNavComponent,
     FooterNavComponent,
     UserProfileComponent,
-    NavBarComponent
+    NavBarComponent,
+    FilmPopularListComponent
   ]
 })
 export class UiModule { }
