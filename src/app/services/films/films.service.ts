@@ -6,7 +6,7 @@ import {Injectable} from "@angular/core";
  @Injectable()
  export class FilmsService {
  
-     private _URLGetPopularFilms = "https://api.themoviedb.org/3/movie/popular?api_key=107bde7a19539e697a8e9bdd3a4a44af&language=en-US&page=1";
+     private _URLGetPopularFilms = "https://api.themoviedb.org/3/movie/popular?api_key=107bde7a19539e697a8e9bdd3a4a44af&language=fr&page=1";
       
      constructor(private http: Http) {
      }
