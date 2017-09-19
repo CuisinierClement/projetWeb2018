@@ -15,7 +15,7 @@ export const firebaseConfig = environment.firebaseConfig;
 import { CoreModule } from './core/core.module';
 
 // Shared/Widget
-import { SharedModule } from './services/shared.module'
+import { SharedModule } from './services/shared.module';
 
 // Feature Modules
 import { ItemModule } from './services/items/item.module';
@@ -24,12 +24,14 @@ import { UiModule } from './ui/ui.module';
 
 import { AlertModule } from 'ngx-bootstrap';
 import { ModalModule } from 'ngx-bootstrap';
+import {ChatAppComponent} from './ui/chat-app/chat-app.component';
 ///// End FireStarter
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChatAppComponent
   ],
   imports: [
     AlertModule.forRoot(),

@@ -18,7 +18,7 @@ export class ItemsListComponent implements OnInit {
   constructor(private itemSvc: ItemService) { }
 
   ngOnInit() {
-    this.items = this.itemSvc.getItemsList({ limitToLast: 5 })
+    this.items = this.itemSvc.getItemsList({ limitToLast: 10 })
     this.items.subscribe(() => this.showSpinner = false)
   }
 
