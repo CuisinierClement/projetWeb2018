@@ -15,25 +15,21 @@ export const firebaseConfig = environment.firebaseConfig;
 import { CoreModule } from './core/core.module';
 
 // Shared/Widget
-import { SharedModule } from './shared/shared.module'
+import { SharedModule } from './services/shared.module'
 
 // Feature Modules
-import { ItemModule } from './items/shared/item.module';
-import { UploadModule } from './uploads/shared/upload.module';
-import { UiModule } from './ui/shared/ui.module';
-import {NavbarComponent} from './navbar/navbar.component';
+import { ItemModule } from './services/items/item.module';
+import { UploadModule } from './services/uploads/upload.module';
+import { UiModule } from './ui/ui.module';
 
 import { AlertModule } from 'ngx-bootstrap';
 import { ModalModule } from 'ngx-bootstrap';
-import { ItemSingleComponent } from './items/item-single/item-single.component';
-import { ItemAddComponent } from './items/item-add/item-add.component';
 ///// End FireStarter
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent
+    AppComponent
   ],
   imports: [
     AlertModule.forRoot(),

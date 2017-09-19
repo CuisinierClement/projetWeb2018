@@ -1,21 +1,13 @@
-.loading {
-    opacity: 0;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: #272c33;
-    padding-top: 25vh;
-    text-align: center;
-    z-index: -1;
-    transition: opacity .8s ease-out;
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
 }
 
-app-root:empty + .loading {
-  opacity: 1;
-  z-index: 100;
-  h1 {
-    font-family: "courier", monospace;
-    color: #EEE;
-    margin-bottom: 50px;
-  }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
