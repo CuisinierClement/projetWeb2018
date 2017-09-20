@@ -16,7 +16,7 @@ import { FilmsService } from "../../../services/films/films.service";
      getLatestFilms(): void {
          this.filmsService.getLatestFilms()
              .subscribe(
-                 resultArray => this._filmsArray = resultArray.results,
+                 resultArray => this._filmsArray = resultArray,
                  error => console.log("Error :: " + error)
              )
      }
