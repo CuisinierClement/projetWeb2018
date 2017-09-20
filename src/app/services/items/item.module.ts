@@ -10,8 +10,8 @@ import { ItemsListComponent } from '../../ui/items/items-list/items-list.compone
 import { ItemFormComponent } from '../../ui/items/item-form/item-form.component';
 import { ItemDetailComponent } from '../../ui/items/item-detail/item-detail.component';
 import { ItemAddComponent } from '../../ui/items/item-add/item-add.component';
-import {RouterModule} from "@angular/router";
-import {ItemSingleComponent} from "../../ui/items/item-single/item-single.component";
+import {RouterModule} from '@angular/router';
+import {ItemSingleComponent} from '../../ui/items/item-single/item-single.component';
 
 @NgModule({
   imports: [

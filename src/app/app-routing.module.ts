@@ -8,15 +8,18 @@ import { ItemsListComponent } from './ui/items/items-list/items-list.component';
 import { ReadmePageComponent } from './ui/readme-page/readme-page.component';
 
 import { CoreModule } from './core/core.module'
-import {ItemSingleComponent} from "./ui/items/item-single/item-single.component";
-import {ItemAddComponent} from "./ui/items/item-add/item-add.component";
+import {ItemSingleComponent} from './ui/items/item-single/item-single.component';
+import {ItemAddComponent} from './ui/items/item-add/item-add.component';
+import {FilmSingleComponent} from './ui/films/film-single/film-single.component';
+import {FilmPopularListComponent} from './ui/films/film-popular-list/film-popular-list.component';
 
 const routes: Routes = [
-  { path: '', component: ReadmePageComponent },
+  { path: '', component: FilmPopularListComponent },
   { path: 'login', component: UserLoginComponent, },
   { path: 'items', component: ItemsListComponent},
   { path: 'add', component: ItemAddComponent},
   { path: 'item/:id', component: ItemSingleComponent},
+  { path: 'film/:id', component: FilmSingleComponent},
   { path: 'uploads', loadChildren: './services/uploads/upload.module#UploadModule' }
   // { path: 'uploads', component: UploadsListComponent, canActivate: [AuthGuard]},
 ];

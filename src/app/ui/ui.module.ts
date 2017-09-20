@@ -17,6 +17,7 @@ import { FilmTopRatedListComponent } from './films/film-toprated-list/film-topra
 import { FilmUpComingListComponent } from './films/film-upcoming-list/film-upcoming-list.component';
 import { FilmPlayingListComponent } from './films/film-playing-list/film-playing-list.component';
 import { FilmLatestListComponent } from './films/film-latest-list/film-latest-list.component';
+import { FilmSingleComponent } from './films/film-single/film-single.component';
 
 
 
@@ -42,7 +43,8 @@ import { FilmLatestListComponent } from './films/film-latest-list/film-latest-li
     FilmTopRatedListComponent,
     FilmUpComingListComponent,
     FilmPlayingListComponent,
-    FilmLatestListComponent
+    FilmLatestListComponent,
+    FilmSingleComponent
   ],
   exports: [
     TopNavComponent,

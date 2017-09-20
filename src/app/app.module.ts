@@ -25,6 +25,7 @@ import { UiModule } from './ui/ui.module';
 import { AlertModule } from 'ngx-bootstrap';
 import { ModalModule } from 'ngx-bootstrap';
 import {ChatAppComponent} from './ui/chat-app/chat-app.component';
+import {FilmsService} from './services/films/films.service';
 ///// End FireStarter
 
 
@@ -46,6 +47,7 @@ import {ChatAppComponent} from './ui/chat-app/chat-app.component';
     AngularFireModule.initializeApp(firebaseConfig),
   ],
   bootstrap: [AppComponent],
-  schemas: [NO_ERRORS_SCHEMA]
+  schemas: [NO_ERRORS_SCHEMA],
+  providers: [FilmsService]
 })
 export class AppModule { }
