@@ -1,0 +1,27 @@
+import {Component, OnInit} from "@angular/core";
+import { FilmsService } from "../../../services/films/films.service";
+ 
+ @Component({
+     selector: 'latest-film-list',
+     templateUrl: './film-latest-list.component.html',
+     styleUrls: ['./film-latest-list.component.scss'],
+     providers: [ FilmsService ]  
+ })
+ export class FilmLatestListComponent implements OnInit {
+     _filmsArray: any[];
+ 
+     constructor(private filmsService: FilmsService) {
+     }
+ 
+     getLatestFilms(): void {
+         this.filmsService.getLatestFilms()
+             .subscribe(
+                 resultArray => this._filmsArray = resultArray.results,
+                 error => console.log("Error :: " + error)
+             )
+     }
+ 
+     ngOnInit(): void {
+         this.getLatestFilms();
+     }
+ }
