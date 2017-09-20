@@ -1,6 +1,6 @@
 
 <div class="pull-right">
-  <h4 style="color:darkgrey;">Let's chat here!</h4>
+  <h4 style="color:darkgrey;">Chat Room</h4>
   <button (click)="login()" *ngIf="!(user | async)?.uid">Login</button>
 
   <div *ngIf="(user | async)?.uid">
