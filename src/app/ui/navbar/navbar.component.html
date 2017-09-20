@@ -1,3 +1,70 @@
+<!--<button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>-->
+
+<template #signup>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Inscrivez-vous pour plus d'astuces</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form action="/users/add" role="form" class="form-horizontal" id="UserAddForm" method="post" accept-charset="utf-8">
+      <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+      <fieldset>
+        <div class="form-group"><label for="UserUsername" class="control-label col-md-3">Username</label>
+          <div class="col-md-9"><input name="data[User][username]" class="form-control" maxlength="255" type="text"
+                                       id="UserUsername" required="required"/></div>
+        </div>
+        <div class="form-group"><label for="UserMail" class="control-label col-md-3">Your email</label>
+          <div class="col-md-9"><input name="data[User][mail]" class="form-control" maxlength="70" type="text"
+                                       id="UserMail" required="required"/></div>
+        </div>
+        <div class="form-group"><label for="UserPassword" class="control-label col-md-3">Password</label>
+          <div class="col-md-9"><input name="data[User][password]" class="form-control" type="password"
+                                       id="UserPassword" required="required"/></div>
+        </div>
+        <div class="form-group"><label for="UserRepass" class="control-label col-md-3">Repass</label>
+          <div class="col-md-9"><input name="data[User][repass]" class="form-control" type="password" id="UserRepass"
+                                       required="required"/></div>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <div class="col-md-offset-3 col-md-9"><input class="btn btn-success" type="submit" value="S&#039;inscrire"/>
+        </div>
+      </div>
+    </form>
+  </div>
+</template>
+
+
+<template #login>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Entrez votre pseudo et mot de passe</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form action="/users/login" role="form" class="form-horizontal" id="UserLoginForm" method="post"
+          accept-charset="utf-8">
+      <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+      <fieldset>
+        <div class="form-group"><label for="UserUsername" class="control-label col-md-3">Username</label>
+          <div class="col-md-9"><input name="data[User][username]" class="form-control" maxlength="255" type="text"
+                                       id="UserUsername" required="required"/></div>
+        </div>
+        <div class="form-group"><label for="UserPassword" class="control-label col-md-3">Password</label>
+          <div class="col-md-9"><input name="data[User][password]" class="form-control" type="password"
+                                       id="UserPassword" required="required"/></div>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <div class="col-md-offset-3 col-md-9"><input class="btn btn-success" type="submit" value="Login"/></div>
+      </div>
+    </form>
+  </div>
+</template>
+
 <header>
   <div class="col-lg-12">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -26,26 +93,47 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left active_menu">
-            <li><a href="/items">Films</a></li>
-            <li><a href="/items">Dernières sorties</a></li>
-            <li><a href="/items">Les meilleurs films</a></li>
+            <li>
+              <a href="/">NEWS</a></li>
+            <li><a href="/posts/index/3">Pokemon GO</a></li>
+            <li class="dropdown">
+              <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a> -->
+              <a href="/posts/index/4">Tests</a>                        <!-- <ul class="dropdown-menu" role="menu">
+						                <li><a href="#">Action</a></li>
+						                <li><a href="#">Another action</a></li>
+						                <li><a href="#">Something else here</a></li>
+						                <li class="divider"></li>
+						                <li class="dropdown-header">Nav header</li>
+						                <li><a href="#">Separated link</a></li>
+						                <li><a href="#">One more separated link</a></li>
+					              </ul> -->
+            </li>
           </ul>
           <ul class="nav navbar-nav test hidden-sm hidden-xs">
             <li>
               <a class="brand col-lg-push-7 col-md-push-4" href="/">
+                <!-- <img src="img/logo3.png" style="position: absolute;"> -->
               </a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+
             <li class="hidden-xs">
               <div class="btn-group" style="padding: 8px;">
+
                 <a href="#" class="btn btn-info"
                    role="button"><span class="glyphicon glyphicon-user"></span>
                 </a>
                 <a (click)="openModal(login)" class="btn btn-default poplight" data-width="500" data-rel="popup1" role="button">Log in</a>
-                <a (click)="openModal(signup)" class="btn btn-default poplight" data-width="500" data-rel="popup2" role="button">Sign up</a>
+                <a (click)="openModal(signup)" class="btn btn-default poplight" data-width="500" data-rel="popup2"
+                   role="button">Sign up</a>
+
               </div>
             </li>
+
+
+            <!-- <li><a href="../navbar-static-top/">Static top</a></li>
+                            <li class="active"><a href="./">Fixed top</a></li> -->
           </ul>
 
         </div><!--/.nav-collapse -->
