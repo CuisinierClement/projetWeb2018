@@ -585,3 +585,9 @@ nav ul li:nth-child(4) a span {
   font-weight: 700;
   text-shadow: #000 1px 1px, #000 -1px 1px, #000 -1px -1px, #000 1px -1px;
 }
+
+.imgcontainer {
+  width: 50% !important;
+  margin-left: 25%;
+}
+    
