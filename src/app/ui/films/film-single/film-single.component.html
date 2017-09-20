@@ -3,14 +3,14 @@
     <div class="row">
       <div id="title" class="col-xs-12">
         <div class="row"><span class="trame col-xs-12"></span></div>
-        <h1 style="margin: 2px;" class="col-xs-12">{{ item.genres.name }}</h1>
+        <h1 style="margin: 2px;" class="col-xs-12" *ngFor="let genre of item.genres">{{ genre.name }}</h1>
         <h4 style="margin: 2px;" class="col-xs-12">Info - February 10, 2016, 11:05 pm</h4>
       </div>
       <div id="content" class="col-md-10 col-md-offset-1">
         <div class="col-xs-12">
           <div class="row separator">
             <div class="corps-article text-enrichi-default">
-              <p>{{ item | async | json }}</p>
+              <p>{{ item.overview }}</p>
 
               <p><img alt="" src="http://giffiles.alphacoders.com/150/15009.gif" style="height:291px; width:540px"></p>
 

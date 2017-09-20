@@ -57,9 +57,9 @@ export class FilmsService {
 
   getSingleFilm(key: string): Observable<any> {
     return this.http
-      .get(`https://api.themoviedb.org/3/movie/${key}?api_key=107bde7a19539e697a8e9bdd3a4a44af&language=en-US`)
+      .get(`https://api.themoviedb.org/3/movie/${key}?api_key=107bde7a19539e697a8e9bdd3a4a44af&language=fr`)
       .map((response: Response) => {
-        return response.json();
+        return <any>response.json();
       })
       .catch(this.handleError);
   }

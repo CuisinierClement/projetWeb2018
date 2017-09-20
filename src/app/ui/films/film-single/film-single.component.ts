@@ -12,17 +12,16 @@ export class FilmSingleComponent implements OnInit {
   itemId: string;
   showSpinner = true;
 
-  constructor(private itemSvc: FilmsService, private activatedRoute: ActivatedRoute) { }
+  constructor(private _itemSvc: FilmsService, private _activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.activatedRoute.params.subscribe((params: Params) => {
+    this._activatedRoute.params.subscribe((params: Params) => {
       this.itemId = params['id'];
-      console.log(this.itemId);
     });
 
-    this.item = this.itemSvc.getSingleFilm(this.itemId);
-    this.item.subscribe(() => this.showSpinner = false);
-    console.log(this.item);
+    this._itemSvc.getSingleFilm(this.itemId).subscribe(item => {
+      this.item = item;
+      this.showSpinner = false;
+    });
   }
-
 }
