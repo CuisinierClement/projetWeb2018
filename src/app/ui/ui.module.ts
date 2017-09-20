@@ -13,6 +13,11 @@ import { FooterNavComponent } from './footer-nav/footer-nav.component';
 import { ReadmePageComponent } from './readme-page/readme-page.component';
 import { NavBarComponent } from './navbar/navbar.component';
 import { FilmPopularListComponent } from './films/film-popular-list/film-popular-list.component';
+import { FilmTopRatedListComponent } from './films/film-toprated-list/film-toprated-list.component';
+import { FilmUpComingListComponent } from './films/film-upcoming-list/film-upcoming-list.component';
+import { FilmPlayingListComponent } from './films/film-playing-list/film-playing-list.component';
+import { FilmLatestListComponent } from './films/film-latest-list/film-latest-list.component';
+
 
 
 
@@ -33,14 +38,22 @@ import { FilmPopularListComponent } from './films/film-popular-list/film-popular
     UserFormComponent,
     ReadmePageComponent,
     NavBarComponent,
-    FilmPopularListComponent
+    FilmPopularListComponent,
+    FilmTopRatedListComponent,
+    FilmUpComingListComponent,
+    FilmPlayingListComponent,
+    FilmLatestListComponent
   ],
   exports: [
     TopNavComponent,
     FooterNavComponent,
     UserProfileComponent,
     NavBarComponent,
-    FilmPopularListComponent
+    FilmPopularListComponent,
+    FilmTopRatedListComponent,
+    FilmUpComingListComponent,
+    FilmPlayingListComponent,
+    FilmLatestListComponent
   ]
 })
 export class UiModule { }
