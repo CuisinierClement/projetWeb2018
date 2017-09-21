@@ -14,6 +14,7 @@ import { AngularFireAuthProvider } from 'angularfire2/auth';
 export class ChatAppComponent {
   title = 'app';
   user: Observable<firebase.User>;
+  allUsers: FirebaseListObservable<any[]>;
   items: FirebaseListObservable<any[]>;
   name: any;
   msgVal: string;
@@ -30,9 +31,9 @@ export class ChatAppComponent {
   constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
     this.items = af.list('/messages', {
       query: {
-        limitToLast: 5
-      }
-    });
+        limitToLast: 200
+      }});
+    this.allUsers = af.list('/users');
     this.user = this.afAuth.authState;
     // this.name = this.afAuth.auth.currentUser.displayName;
     this.name = 'name';
