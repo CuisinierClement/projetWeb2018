@@ -66,7 +66,10 @@ export class ChatAppComponent {
   chatSend(theirMessage: string) {
     // this.items.push({ message: theirMessage, name: this.name.facebook.displayName});
     // this.name = this.afAuth.auth.currentUser.displayName;
-    this.name = this.afAuth.auth.currentUser.displayName;
+    this.name = 'Anonymous';
+    if (this.afAuth.auth.currentUser.displayName) {
+      this.name = this.afAuth.auth.currentUser.displayName;
+    }
     this.items.push({ message: theirMessage, name: this.name});
     this.msgVal = '';
   }
