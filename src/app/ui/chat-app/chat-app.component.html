@@ -1,7 +1,7 @@
 <!--<script type="text/javascript">-->
   <!--console.log("Document ready 1");-->
   <!--//  $(document).ready(function () {-->
-  <!--var objDiv = document.getElementById("wmsg");-->
+  <!--var objDiv = document.getElementById("window-chat");-->
   <!--console.log(objDiv.scrollTop);-->
   <!--console.log(objDiv.scrollHeight);-->
   <!--console.log(objDiv.clientHeight);-->
@@ -15,7 +15,7 @@
 <div *ngIf="(user | async)?.uid">
   <h3 style="color:white;  font-family: Consolas"><span class="glyphicon glyphicon-comment"></span> Chat Room</h3>
 
-    <div id="wmsg" style="overflow-y: scroll; height:200px">
+    <div id="window-chat" style="overflow-y: scroll; height:200px">
       <div class="chat-container" *ngFor="let item of items | async" >
         <a href="#">{{item.name}}</a>
         <p>{{item.message}}</p>
