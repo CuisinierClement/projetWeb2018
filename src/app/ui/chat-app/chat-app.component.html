@@ -11,7 +11,17 @@
   <!--console.log("Document ready");-->
   <!--//  });-->
 <!--</script>-->
-<br/>
+<script type="text/javascript">
+  window.ready = function () {
+    var objDiv = null;
+    if (objDiv != null) {
+      $(".objDiv").animate({scrollTop: $(document).height()}, "slow");
+      //        $(".objDiv").scrollTop = objDiv.scrollHeight;
+    } else {
+      console.log("ch element window-chat not found");
+    }
+  }
+</script>
 <div *ngIf="(user | async)?.uid">
   <h3 style="color:white;  font-family: Consolas"><span class="glyphicon glyphicon-comment"></span> Chat Room</h3>
 
