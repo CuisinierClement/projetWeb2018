@@ -1,22 +1,33 @@
+<!--<script type="text/javascript">-->
+  <!--console.log("Document ready 1");-->
+  <!--//  $(document).ready(function () {-->
+  <!--var objDiv = document.getElementById("wmsg");-->
+  <!--console.log(objDiv.scrollTop);-->
+  <!--console.log(objDiv.scrollHeight);-->
+  <!--console.log(objDiv.clientHeight);-->
+  <!--//    objDiv.scrollTop = objDiv.scrollHeight;-->
+  <!--objDiv.scrollTop = objDiv.scrollHeight - objDiv.clientHeight;-->
+  <!--//    alert("test");-->
+  <!--console.log("Document ready");-->
+  <!--//  });-->
+<!--</script>-->
+<br/>
+<div *ngIf="(user | async)?.uid">
+  <h3 style="color:white;  font-family: Consolas"><span class="glyphicon glyphicon-comment"></span> Chat Room</h3>
 
-<div class="col-xs-12"><br/>
-  <h3 style="color:darkgrey; font-family: Consolas"><span class="glyphicon glyphicon-comment"></span> Chat Room</h3>
-  <button (click)="login()" *ngIf="!(user | async)?.uid">Login</button>
-
-  <div *ngIf="(user | async)?.uid">
-    <button (click)="logout()">Logout</button>
-    <div style="overflow-y: scroll; height:200px">
-
-    <div class="chat-container" *ngFor="let item of items | async" >
-      <a href="#">{{item.name}}</a>
-      <p>{{item.message}}</p>
-    </div>
+    <div id="wmsg" style="overflow-y: scroll; height:200px">
+      <div class="chat-container" *ngFor="let item of items | async" >
+        <a href="#">{{item.name}}</a>
+        <p>{{item.message}}</p>
+      </div>
     </div>
 
     <input type="text" id="message"  *ngIf="(user | async)?.uid" placeholder="Type your message here..."
            (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="msgVal" />
-  </div>
+
+
 </div>
+
 <!--<div class="col-md-8 col-md-offset-2">
 <!--<div class="chat-window-container">-->
 <!-- <div class="">
