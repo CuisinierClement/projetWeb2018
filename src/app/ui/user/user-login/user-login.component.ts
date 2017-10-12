@@ -56,4 +56,9 @@ export class UserLoginComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
+  /// Signout
+  private signOut(): void {
+    this.auth.signOut();
+  }
+
 }
