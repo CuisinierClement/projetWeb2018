@@ -12,9 +12,17 @@ import {ItemSingleComponent} from './ui/items/item-single/item-single.component'
 import {ItemAddComponent} from './ui/items/item-add/item-add.component';
 import {FilmSingleComponent} from './ui/films/film-single/film-single.component';
 import {FilmPopularListComponent} from './ui/films/film-popular-list/film-popular-list.component';
+import {FilmLatestListComponent} from './ui/films/film-latest-list/film-latest-list.component';
+import {FilmPlayingListComponent} from './ui/films/film-playing-list/film-playing-list.component';
+import {FilmTopRatedListComponent} from './ui/films/film-toprated-list/film-toprated-list.component';
+import {FilmUpComingListComponent} from './ui/films/film-upcoming-list/film-upcoming-list.component';
 
 const routes: Routes = [
   { path: '', component: FilmPopularListComponent },
+  { path: 'latest', component: FilmLatestListComponent },
+  { path: 'playing', component: FilmPlayingListComponent },
+  { path: 'toprated', component: FilmTopRatedListComponent },
+  { path: 'upcoming', component: FilmUpComingListComponent },
   { path: 'login', component: UserLoginComponent, },
   { path: 'items', component: ItemsListComponent},
   { path: 'add', component: ItemAddComponent},
