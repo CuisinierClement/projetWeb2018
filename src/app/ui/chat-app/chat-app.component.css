@@ -1,7 +1,7 @@
 input#message {
   background:none;
   border:none;
-  border-bottom: 1px solid #4C4C4C;
+  border-bottom: 1px solid #b2b2b2;
   outline:none;
   box-shadow:none;
   color: white;
@@ -37,15 +37,6 @@ img {
 .chat-container {
   display:block;
   width:100%;
-}
-.chat-container:nth-child(4) {
-  opacity: .8;
-}
-.chat-container:nth-child(3) {
-  opacity: .6;
-}
-.chat-container:nth-child(2) {
-  opacity: .4;
 }
 
 .chat-container a {
