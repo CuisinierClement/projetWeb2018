@@ -26,6 +26,7 @@ import { AlertModule } from 'ngx-bootstrap';
 import { ModalModule } from 'ngx-bootstrap';
 import {ChatAppComponent} from './ui/chat-app/chat-app.component';
 import {FilmsService} from './services/films/films.service';
+import {UserService} from './services/user/user.service';
 ///// End FireStarter
 
 
@@ -48,6 +49,6 @@ import {FilmsService} from './services/films/films.service';
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [FilmsService]
+  providers: [FilmsService, UserService]
 })
 export class AppModule { }
