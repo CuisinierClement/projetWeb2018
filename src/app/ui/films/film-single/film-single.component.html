@@ -1,29 +1,59 @@
-<div class="col-md-12 col-sm-12">
+  <div class="col-md-12 col-sm-12">
   <div class="back-white col-xs-12" style="float: none;">
     <div class="row">
       <div id="title" class="col-xs-12">
         <div class="row"><span class="trame col-xs-12"></span></div>
-        <!--<h1 style="margin: 2px;" class="col-xs-12" *ngFor="let genre of item.genres">{{ genre.name }}</h1>-->
         <h1 style="margin: 2px;" class="col-xs-12">{{ title }}</h1>
         <h4 style="margin: 2px;" class="col-xs-12">Date de sortie - {{ release_date }}</h4>
+        <h4 style="margin: 2px;" class="col-xs-12" *ngIf="runtime">Durée du film - {{runtime}} min</h4>
       </div>
       <div id="content" class="col-md-10 col-md-offset-1">
         <div class="col-xs-12">
           <div class="row separator">
             <div class="corps-article text-enrichi-default">
-              <p>{{ overview }}</p>
+              <div class="box-body">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <img class="img-responsive pad" src="http://cf2.imgobject.com/t/p/w300/{{poster_path}}">
+                </div>
 
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                  <br>
+                  <table class="table table-responsive">
+                    <tbody><tr>
+                      <td><b>Titre Originel</b></td>
+                      <td>{{original_title}}</td>
+                    </tr>
+                    <tr *ngIf="production_companies!=''">
+                      <td><b>Productions</b></td>
+                      <td>
+                        <li *ngFor="let prod of production_companies">{{prod.name}}</li>
+                      </td>
+                    </tr>
+                    <tr *ngIf="genres!=''">
+                      <td><b>Genres</b> </td>
+                      <td>
+                       <li *ngFor="let genre of genres">{{genre.name}}</li>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Résumé</b> </td>
+                      <td align="justify">{{overview}}</td>
+                    </tr>
+                    <tr *ngIf="pourcent">
+                      <td><b>Rentabilité</b></td>
+                      <td>Ce film a remporté <b>{{pourcent | number:'1.0-0'}} %</b> du budget initial investit</td>
+                    </tr>
+                    <tr *ngIf="vote_average">
+                      <td><b>Note</b></td>
+                      <td><b>{{vote_average}}</b>/10 sur {{vote_count}} votes</td>
+                    </tr>
+                  </tbody></table>
+                  <br>        
+                </div>
+            </div>
             </div>
           </div>
         </div>
-
-        <div id="disqus_thread">
-          <iframe id="dsq-app2479" name="dsq-app2479" allowtransparency="true" frameborder="0" scrolling="no"
-                  tabindex="0" title="Disqus" width="100%"
-                  src="https://disqus.com/embed/comments/?base=default&amp;f=theukid&amp;t_i=34&amp;t_u=http%3A%2F%2Fserver.rachedizakaria.fr%2Fposts%2Fview%2F34&amp;t_d=Dragon%20Ball%20Xenoverse%202%2C%20des%20combats%20qui%20font%20plaisir&amp;t_t=Dragon%20Ball%20Xenoverse%202%2C%20des%20combats%20qui%20font%20plaisir&amp;s_o=default#version=f64af707d24453c18e3365ee3ec42966"
-                  style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 530px !important;"
-                  horizontalscrolling="no" verticalscrolling="no"></iframe>
-        </div>  <!-- Ici se trouve le contenu de la vue généré -->
       </div>
     </div>
   </div>

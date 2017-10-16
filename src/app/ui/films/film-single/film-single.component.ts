@@ -14,6 +14,17 @@ export class FilmSingleComponent implements OnInit {
   title: string;
   release_date: string;
   overview: string;
+  poster_path: string;
+  budget: number;
+  revenue: number;
+  original_title: string;
+  production_companies: any[];
+  genres: any[];
+  backdrop_path: string;
+  pourcent: number;
+  runtime: string;
+  vote_average: string;
+  vote_count: string;
 
   constructor(private _itemSvc: FilmsService, private _activatedRoute: ActivatedRoute) { }
 
@@ -23,6 +34,17 @@ export class FilmSingleComponent implements OnInit {
     });
 
     this._itemSvc.getSingleFilm(this.itemId).subscribe(item => {
+      this.original_title = item.original_title;
+      this.production_companies = item.production_companies;
+      this.genres = item.genres;
+      this.backdrop_path = item.backdrop_path;
+      this.runtime = item.runtime;
+      this.vote_average = item.vote_average;
+      this.vote_count = item.vote_count;
+      this.poster_path = item.poster_path;
+      this.budget = item.budget;
+      this.revenue = item.revenue;
+      this.pourcent = item.revenue/item.budget*100;
       this.title = item.title;
       this.release_date = item.release_date;
       this.overview = item.overview;
