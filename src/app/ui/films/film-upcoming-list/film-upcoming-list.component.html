@@ -1,7 +1,7 @@
 <div *ngFor="let film of _filmsArray">
   <div class="col-md-6 col-sm-6">
     <div class="thumbnail">
-        <a routerLink="#" routerLinkActive="active">
+        <a routerLink="/film/{{film.id}}" routerLinkActive="active">
         <div class="imgcontainer">
             <img src="https://image.tmdb.org/t/p/w500{{film.poster_path}}"/>
         </div>
