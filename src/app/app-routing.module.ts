@@ -16,6 +16,7 @@ import {FilmLatestListComponent} from './ui/films/film-latest-list/film-latest-l
 import {FilmPlayingListComponent} from './ui/films/film-playing-list/film-playing-list.component';
 import {FilmTopRatedListComponent} from './ui/films/film-toprated-list/film-toprated-list.component';
 import {FilmUpComingListComponent} from './ui/films/film-upcoming-list/film-upcoming-list.component';
+import {FilmSearchListComponent} from './ui/films/film-search-list/film-search-list.component';
 
 const routes: Routes = [
   { path: '', component: FilmPopularListComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'add', component: ItemAddComponent},
   { path: 'item/:id', component: ItemSingleComponent},
   { path: 'film/:id', component: FilmSingleComponent},
+  { path: 'search', component: FilmSearchListComponent},
   { path: 'uploads', loadChildren: './services/uploads/upload.module#UploadModule' }
   // { path: 'uploads', component: UploadsListComponent, canActivate: [AuthGuard]},
 ];

@@ -64,6 +64,16 @@ export class FilmsService {
       .catch(this.handleError);
   }
 
+  getSearchFilm(query: string): Observable<any> {
+    return this.http
+      .get(Constantes.URL_GET_SEARCH+""+query)
+      .map((response: Response) => {
+        console.log("reponse "+response.json());
+        return <any>response.json();
+      })
+      .catch(this.handleError);
+  }
+
 
   private handleError(error: Response) {
     return Observable.throw(error.statusText);
