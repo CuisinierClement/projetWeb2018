@@ -18,6 +18,7 @@ import { FilmUpComingListComponent } from './films/film-upcoming-list/film-upcom
 import { FilmPlayingListComponent } from './films/film-playing-list/film-playing-list.component';
 import { FilmLatestListComponent } from './films/film-latest-list/film-latest-list.component';
 import { FilmSingleComponent } from './films/film-single/film-single.component';
+import { FilmSearchListComponent } from './films/film-search-list/film-search-list.component';
 
 
 
@@ -44,7 +45,8 @@ import { FilmSingleComponent } from './films/film-single/film-single.component';
     FilmUpComingListComponent,
     FilmPlayingListComponent,
     FilmLatestListComponent,
-    FilmSingleComponent
+    FilmSingleComponent,
+    FilmSearchListComponent
   ],
   exports: [
     TopNavComponent,
@@ -55,7 +57,8 @@ import { FilmSingleComponent } from './films/film-single/film-single.component';
     FilmTopRatedListComponent,
     FilmUpComingListComponent,
     FilmPlayingListComponent,
-    FilmLatestListComponent
+    FilmLatestListComponent,
+    FilmSearchListComponent
   ]
 })
 export class UiModule { }
