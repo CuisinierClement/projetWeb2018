@@ -1,5 +1,5 @@
-import {Component, OnInit} from "@angular/core";
-import { FilmsService } from "../../../services/films/films.service";
+import {Component, OnInit} from '@angular/core';
+import { FilmsService } from '../../../services/films/films.service';
 
  @Component({
      selector: 'upcoming-film-list',
@@ -17,7 +17,7 @@ import { FilmsService } from "../../../services/films/films.service";
          this.filmsService.getUpcomingFilms()
              .subscribe(
                  resultArray => this._filmsArray = resultArray.results,
-                 error => console.log("Error :: " + error)
+                 error => console.log('Error :: ' + error)
              )
      }
 
