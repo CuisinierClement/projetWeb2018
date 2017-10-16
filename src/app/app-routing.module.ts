@@ -19,9 +19,9 @@ import {FilmUpComingListComponent} from './ui/films/film-upcoming-list/film-upco
 import {FilmSearchListComponent} from './ui/films/film-search-list/film-search-list.component';
 
 const routes: Routes = [
-  { path: '', component: FilmPopularListComponent },
+  { path: '', component: FilmPlayingListComponent },
   { path: 'latest', component: FilmLatestListComponent },
-  { path: 'playing', component: FilmPlayingListComponent },
+  { path: 'popular', component: FilmPopularListComponent },
   { path: 'toprated', component: FilmTopRatedListComponent },
   { path: 'upcoming', component: FilmUpComingListComponent },
   { path: 'login', component: UserLoginComponent, },
