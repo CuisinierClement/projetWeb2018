@@ -7,7 +7,7 @@ import { AngularFireAuthProvider } from 'angularfire2/auth';
 import {User} from 'firebase/app';
 // import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 import {AfterViewChecked, ElementRef, ViewChild, OnInit} from '@angular/core';
-import { generateColor } from '../../util/uuid';
+import { generateColor } from '../../util/color';
 
 export class Thread {
   messages: Message[];
