@@ -7,6 +7,7 @@ import { AngularFireAuthProvider } from 'angularfire2/auth';
 import {User} from 'firebase/app';
 // import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 import {AfterViewChecked, ElementRef, ViewChild, OnInit} from '@angular/core';
+import { generateColor } from '../../util/uuid';
 
 export class Thread {
   messages: Message[];
@@ -16,10 +17,11 @@ export class Thread {
 export class Message {
   text: string;
   author: string;
+  color: string;
 }
 const MSG: Message[] = [
-  { text: 'Hola', author: 'Alice' },
-  { text: 'Hello', author: 'Bob' },
+  { text: 'Hola', author: 'Alice', color: 'orange' },
+  { text: 'Hello', author: 'Bob', color: 'purple' },
 ];
 @Component({
   selector: 'app-chat',
@@ -30,19 +32,31 @@ export class ChatAppComponent implements OnInit, AfterViewChecked  {
   @ViewChild('windowChat') private myScrollContainer: ElementRef;
 
   user: Observable<firebase.User>;
-  allUsers: FirebaseListObservable<any[]>;
+  // allUsers: FirebaseListObservable<any[]>;
   items: FirebaseListObservable<any[]>;
   name: any;
   msgVal: string = '';
+  userEmail: string = '';
 
   constructor(public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
     this.items = af.list('/messages', {
       query: {
         limitToLast: 200
       }});
-    this.allUsers = af.list('/users');
     this.user = this.afAuth.authState;
-    this.name = 'Anonymous';
+    // this.allUsers = af.list('/users');
+    // console.log(this.user);
+    // console.log(this.afAuth.auth);
+    // this.authUser = this.afAuth.auth;
+    // console.log(this.afAuth.auth.currentUser.email);
+    if (this.afAuth.auth.currentUser != null) {
+      this.userEmail = this.afAuth.auth.currentUser.email;
+      this.name = this.afAuth.auth.currentUser.displayName;
+    }else {
+      this.userEmail = 'anon@tech.com';
+      this.name = 'Anonymous';
+    }
+    // this.userColor = generateColor(this.name);
   }
   ngOnInit() {
     this.scrollToBottom();
@@ -56,11 +70,15 @@ export class ChatAppComponent implements OnInit, AfterViewChecked  {
     } catch (err) { }
   }
   chatSend(message: string) {
-    // this.name = 'Anonymous';
+    this.name = 'Anonymous';
+    this.userEmail = 'anon@tech.com';
     if (this.afAuth.auth.currentUser.displayName) {
       this.name = this.afAuth.auth.currentUser.displayName;
+      this.userEmail = this.afAuth.auth.currentUser.email;
     }
-    this.items.push({ message: message, name: this.name});
+    this.items.push({ message: message, name: this.name, email: this.userEmail, color: generateColor(this.name)});
+    // this.items.push({ message: message, name: this.name, color: generateColor(this.name)});
+    // this.items.push({ message: message, name: this.name});
     this.msgVal = null;
   }
 }

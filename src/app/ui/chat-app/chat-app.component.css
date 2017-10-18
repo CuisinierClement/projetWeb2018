@@ -42,7 +42,7 @@ img {
 .chat-container a {
   text-transform: uppercase;
   font-weight:bold;
-  color: #9be188;
+  /*color: #9be188;*/
   font-size:.8em;
   letter-spacing:2px;
 }

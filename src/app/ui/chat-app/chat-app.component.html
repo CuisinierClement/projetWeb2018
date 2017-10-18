@@ -1,10 +1,24 @@
 <div *ngIf="(user | async)?.uid">
   <h3 style="color:white;  font-family: Consolas"><span class="glyphicon glyphicon-comment"></span> Chat Room</h3>
+    {{userEmail}}
+    {{name}}
+    <div id="window-chat" #windowChat style="overflow-y: scroll; height:400px">
+      <div class="chat-container" *ngFor="let item of items | async">
+        <!--<div *ngIf="'{{item.email}}' == userEmail " >-->
+          <!--<p style="text-align: right;">-->
+             <!--lol</p>-->
+      <!--</div>-->
+        <!--<a href="#" (style.color)="'#{{item.color}}'">{{item.name}}</a>-->
 
-    <div id="window-chat" #windowChat style="overflow-y: scroll; height:500px">
-      <div class="chat-container" *ngFor="let item of items | async" >
-        <a href="#">{{item.name}}</a>
-        <p>{{item.message}}</p>
+        <div *ngIf="item.email == afAuth.auth.currentUser.email; else otherMessages" style="text-align: right">
+          <!--<a href="#"> (me)</a>-->
+          <h5 style.color="{{item.color}}"> </h5>
+          <p style.background="{{item.color}}">{{item.message}}</p>
+        </div>
+        <ng-template  #otherMessages>
+          <h5 style.color="{{item.color}}">{{item.name}}</h5>
+          <p style.background="{{item.color}}">{{item.message}}</p>
+        </ng-template >
       </div>
     </div>
 
