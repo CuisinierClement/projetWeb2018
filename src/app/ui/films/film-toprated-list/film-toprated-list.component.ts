@@ -3,7 +3,7 @@ import { FilmsService } from "../../../services/films/films.service";
 
  @Component({
      selector: 'toprated-film-list',
-     templateUrl: '../film-popular-list/film-popular-list.component.html',
+     templateUrl: '../film-toprated-list/film-toprated-list.component.html',
      styleUrls: ['./film-toprated-list.component.scss'],
      providers: [ FilmsService ]
  })
