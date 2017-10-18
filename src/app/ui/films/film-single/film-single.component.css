@@ -1,9 +1,9 @@
 body {
   padding-top: 80px;
-  /*background: url(../img/zeldaF4.jpg) no-repeat top center;*/
+  background: url(../../../../assets/images/zeldaF4.jpg) no-repeat top center!important;
   background-color: #26160b;
   font-family: Roboto, Arial, Helvetica, sans-serif!important;
-  color: #28170e
+  color: #28170e;
 }
 
 @font-face {
@@ -66,7 +66,7 @@ section.container>div>div>div>div.col-sm-12 .btn {
 }
 
 .trame {
-  /*background: url(../img/trame.jpg) repeat-x;*/
+  background: url(../../../../assets/images/trame.jpg) repeat-x;
   width: 100%;
   height: 16px
 }
