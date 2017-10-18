@@ -1,7 +1,5 @@
 <div *ngIf="(user | async)?.uid">
   <h3 style="color:white;  font-family: Consolas"><span class="glyphicon glyphicon-comment"></span> Chat Room</h3>
-    {{userEmail}}
-    {{name}}
     <div id="window-chat" #windowChat style="overflow-y: scroll; height:400px">
       <div class="chat-container" *ngFor="let item of items | async">
         <!--<div *ngIf="'{{item.email}}' == userEmail " >-->

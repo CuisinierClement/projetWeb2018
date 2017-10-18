@@ -80,5 +80,6 @@ export class ChatAppComponent implements OnInit, AfterViewChecked  {
     // this.items.push({ message: message, name: this.name, color: generateColor(this.name)});
     // this.items.push({ message: message, name: this.name});
     this.msgVal = null;
+    this.msgVal = ' ';
   }
 }
