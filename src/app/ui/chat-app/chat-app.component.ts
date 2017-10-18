@@ -70,16 +70,20 @@ export class ChatAppComponent implements OnInit, AfterViewChecked  {
     } catch (err) { }
   }
   chatSend(message: string) {
-    this.name = 'Anonymous';
-    this.userEmail = 'anon@tech.com';
-    if (this.afAuth.auth.currentUser.displayName) {
-      this.name = this.afAuth.auth.currentUser.displayName;
-      this.userEmail = this.afAuth.auth.currentUser.email;
+    if (message === '') {
+      console.log('empty message');
+    }else {
+      this.name = 'Anonymous';
+      this.userEmail = 'anon@tech.com';
+      if (this.afAuth.auth.currentUser.displayName) {
+        this.name = this.afAuth.auth.currentUser.displayName;
+        this.userEmail = this.afAuth.auth.currentUser.email;
+      }
+      this.items.push({message: message, name: this.name, email: this.userEmail, color: generateColor(this.name)});
+      // this.items.push({ message: message, name: this.name, color: generateColor(this.name)});
+      // this.items.push({ message: message, name: this.name});
+      this.msgVal = null;
+      this.msgVal = ' ';
     }
-    this.items.push({ message: message, name: this.name, email: this.userEmail, color: generateColor(this.name)});
-    // this.items.push({ message: message, name: this.name, color: generateColor(this.name)});
-    // this.items.push({ message: message, name: this.name});
-    this.msgVal = null;
-    this.msgVal = ' ';
   }
 }

@@ -5,7 +5,7 @@ export function generateColor(name: string)  {
   let hash = 0;
   var i, color;
   for (i = 0; i < name.length; i++) {
-    hash = name.charCodeAt(i) + ((hash << 4) - hash);
+    hash = name.charCodeAt(i) + ((hash << 6) - hash);
   }
 
   color = (hash & 0x00FFFFFF)
