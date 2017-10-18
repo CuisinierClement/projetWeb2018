@@ -7,8 +7,11 @@
             <div class="thumbnail">
                 <a routerLink="/film/{{film.id}}" routerLinkActive="active">
                 <div class="imgcontainer">
-                    <img src="https://image.tmdb.org/t/p/w500{{film.poster_path}}"/>
+                    <img *ngIf="film.poster_path; else noImage" src="https://image.tmdb.org/t/p/w500{{film.poster_path}}"/>
                 </div>
+                <ng-template #noImage>
+                        <img class="noImage" src="../assets/images/noImage.png"/>
+                </ng-template >
                 </a>
                 <div class="caption" style="min-height: 226px;">
                 <h3 class="col-xs-12">
