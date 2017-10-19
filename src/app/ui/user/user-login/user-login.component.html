@@ -1,15 +1,29 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" rel="stylesheet" crossorigin="anonymous">
+
 <div class="modal-body">
   <form *ngIf="!auth.currentUser; else alreadyLoggedIn" class="form-horizontal" accept-charset="utf-8">
     <fieldset>
-      <legend>Social Login</legend>
-      <input class="btn btn-success" (click)="signInWithGoogle()" type="submit" value="Connect Google"/>
-      <input class="btn btn-success" (click)="signInWithGithub()" type="submit" value="Connect Github"/>
-      <input class="btn btn-success" (click)="signInWithFacebook()" type="submit" value="Connect Facebook"/>
-      <input class="btn btn-success" (click)="signInWithTwitter()" type="submit" value="Connect Twitter"/>
+      <legend><b>Connectez vous via un réseau social</b></legend>
+        <a class="btn btn-block btn-social btn-google" (click)="signInWithGoogle()" type="submit">
+          <span class="fa fa-google"></span> Connectez vous avec Google
+        </a>
+        <a class="btn btn-block btn-social btn-facebook" (click)="signInWithFacebook()" type="submit">
+          <span class="fa fa-facebook"></span> Connectez vous avec Facebook
+        </a>
+        <a class="btn btn-block btn-social btn-github" (click)="signInWithGithub()" type="submit">
+          <span class="fa fa-github"></span> Connectez vous avec Github
+        </a>
+        <a class="btn btn-block btn-social btn-twitter" (click)="signInWithTwitter()" type="submit">
+          <span class="fa fa-twitter"></span> Connectez vous avec Twitter
+        </a>
+
       <br>
       <br>
-      <legend>Anonymous Login</legend>
-      <input class="btn btn-success" (click)="signInAnonymously()" type="submit" value="Connect Anonymously"/>
+      <legend><b>Connexion Anonyme</b></legend>
+      <a class="btn btn-block btn-social btn-reddit" (click)="signInAnonymously()" type="submit">
+        <span class="fa fa-user-secret"></span> Connectez vous Anonymement
+      </a>
     </fieldset>
   </form>
 </div>
