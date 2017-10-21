@@ -32,14 +32,24 @@
 
             <li class="hidden-xs">
               <div class="btn-group" style="padding: 8px;">
-
-                <a href="#" class="btn btn-info"
-                   role="button"><span class="glyphicon glyphicon-user"></span>
-                </a>
+                <div *ngIf="auth.currentUserAnonymous === true;" style="display: inline-block; float: left">
+                  <ngx-avatar
+                    skypeId="echo"
+                    size="34" [round]="false"
+                  ></ngx-avatar>
+                </div>
+                <div *ngIf="auth.currentUser !== null;" style="display: inline-block; float: left">
+                    <ngx-avatar
+                      src="{{auth.currentUser.photoURL}}"
+                      name="{{auth.currentUser.displayName}}"
+                      bgColor="white"
+                      fgColor="black"
+                      size="34" [round]="false"
+                    ></ngx-avatar>
+                </div>
                 <a (click)="openModal(login)" class="btn btn-default poplight" data-width="500" data-rel="popup1" role="button">Connexion</a>
                 <a (click)="logout()" class="btn btn-default poplight"
                    role="button">Déconnexion</a>
-
               </div>
             </li>
 

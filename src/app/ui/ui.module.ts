@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserProfileComponent } from './user/user-profile/user-profile.component';
 import { UserFormComponent } from './user/user-form/user-form.component';
+import { AvatarModule } from 'ngx-avatar';
+
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { FooterNavComponent } from './footer-nav/footer-nav.component';
 import { ReadmePageComponent } from './readme-page/readme-page.component';
@@ -21,8 +23,6 @@ import { FilmSingleComponent } from './films/film-single/film-single.component';
 import { FilmSearchListComponent } from './films/film-search-list/film-search-list.component';
 
 
-
-
 @NgModule({
   imports: [
     CommonModule,
@@ -30,6 +30,7 @@ import { FilmSearchListComponent } from './films/film-search-list/film-search-li
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
+    AvatarModule,
     BrowserAnimationsModule
   ],
   declarations: [
