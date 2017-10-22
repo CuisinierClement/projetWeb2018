@@ -27,13 +27,15 @@ import { ModalModule } from 'ngx-bootstrap';
 import {ChatAppComponent} from './ui/chat-app/chat-app.component';
 import {FilmsService} from './services/films/films.service';
 import {UserService} from './services/user/user.service';
+import {UpvoteButtonComponent} from './ui/upvote/upvote-button.component';
 ///// End FireStarter
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatAppComponent
+    ChatAppComponent,
+    UpvoteButtonComponent
   ],
   imports: [
     AlertModule.forRoot(),
