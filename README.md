@@ -36,7 +36,7 @@ Vous pouvez y accéder à l'URL suivante: [filmo.riancu.com](http://filmo.riancu
 * Ouvrir un terminal dans le répertoire du projet ProjetWeb2018.
 * Taper la commande `$ npm install ` pour installer toutes les dépendances
 * Une fois terminé, taper la commande `$ ng serve`
-* Lorsque le projet a terminé de compiler, aller dans votre navigateur à l'URL suivante:  [localhost:4200](localhost:4200)
+* Lorsque le projet a terminé de compiler, aller dans votre navigateur à l'URL suivante: [localhost:4200](localhost:4200)
 
 
 ###Choix de technologies
