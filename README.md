@@ -24,6 +24,12 @@ Nous avons décidé de réaliser un blog sur les films appelé Filmo.
 Ce site regroupe les films qui sont actuellement à l'affiche, qui vont bientôt sortir, les mieux notés et les plus populaires; en cliquant dessus vous pouvez accéder au détail de chacun de ces films. Il est également possible de faire une recherche sur n'importe quel film que vous souhaitez retrouver.
 De plus, afin d'accéder au chat instantané, il est nécessaire de se connecter avec un compte google, facebook, twitter, github ou anonymement, selon votre choix.
 
+
+###Site accessible en ligne
+--------------------------------------------------------
+Le site a été déployé en ligne pour qu'il soit accessible par tous.
+Vous pouvez y accéder à l'URL suivante: [filmo.riancu.com](filmo.riancu.com)
+
 ###Tutoriel d'installation
 --------------------------------------------------------
 * Télécharger et dézipper le projet depuis GitHub.
