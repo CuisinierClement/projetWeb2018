@@ -28,7 +28,7 @@ De plus, afin d'accéder au chat instantané, il est nécessaire de se connecter
 ###Site accessible en ligne
 --------------------------------------------------------
 Le site a été déployé en ligne pour qu'il soit accessible par tous.
-Vous pouvez y accéder à l'URL suivante: [filmo.riancu.com](filmo.riancu.com)
+Vous pouvez y accéder à l'URL suivante: [filmo.riancu.com](http://filmo.riancu.com)
 
 ###Tutoriel d'installation
 --------------------------------------------------------
