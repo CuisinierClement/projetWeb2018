@@ -6,7 +6,7 @@
         <div class="imgcontainer">
             <img src="https://image.tmdb.org/t/p/w500{{film.poster_path}}"/>
         </div>
-        
+
         <div class="caption" style="min-height: 226px;">
         <h3 class="col-xs-12">
             <div class="col-xs-3 row"><img src="../assets/images/felyne_mostview.gif" width="42px" height="42px" class="img-thumbnail" alt=""/></div>
@@ -14,6 +14,15 @@
             <a  routerLink="" routerLinkActive="active">{{ film.title || 'missing title' }}</a>
             <p class="col-xs-12">Date de sortie - {{ film.release_date }}</p>
             </div>
+          <a (click)="upvote()" class="upvote-button btn-default poplight"role="button">Upvote</a>
+          <a (click)="downvote()" class="downvote-button btn-default poplight"role="button">Downvote</a>
+          <!-- todo  Zac-->
+          <!-- voici la façon dont je voudrai integrer le bouton en appelant mon composant
+          a defaut je le fais comme la ligne ci-dessus mais la fct upvote() ne fait rien sur l'even click du bouton-->
+         <!-- <upvote-button [itemId]='film.title' [userId]='user.name_'></upvote-button>-->
+
+          <!--<a (click)="logout()" class="btn btn-default poplight"
+             role="button">Déconnexion</a>-->
         </h3>
         <p>
             {{ film.overview | slice:0:375 }}...
