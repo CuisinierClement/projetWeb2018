@@ -42,9 +42,21 @@ Tutoriel d'installation
 
 Choix de technologies
 --------------------------------------------------------
-* Angular 2
+* Angular 
+
+Ce framework nous a permis d’adopter une structure MVC pour notre site. Cette structure nous offre un code clair, propre et organisé.
 * Firebase
+
+Nous avons choisi Firebase pour héberger plus simplement et en toute sécurité notre base de données NoSQL. Firebase permet également de faciliter les connexions à partir de comptes déjà existants comme Google Account, Facebook, Twitter ou GitHub.
 * API The Movie Database
+
+Avec cette API, nous sommes sur que tous les films existants y sont répertoriés. De plus, les films sont régulièrement mis à jour, cela permet d’être en phase avec ce qui est et ce qui sera présent au cinéma.
 * Bootstrap
+
+Avec le framework front-end « Bootstrap », nous avons pu mettre en place un design complètement responsive, s’adaptant à toutes les tailles de devices. 
 * JSON
-* NPM
+
+Les requêtes HTTP s'effectuent en REST / JSON
+* Trello
+
+Nous avons utilisé Trello comme outil de gestion de projet et ainsi répartir et voir à quels stades étaient les tâches de chacun d’entre nous.
