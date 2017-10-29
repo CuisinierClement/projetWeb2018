@@ -26,6 +26,7 @@ Projet réalisé
 Nous avons décidé de réaliser un blog sur les films appelé Filmo.
 Ce site regroupe les films qui sont actuellement à l'affiche, qui vont bientôt sortir, les mieux notés et les plus populaires; en cliquant dessus vous pouvez accéder au détail de chacun de ces films. Il est également possible de faire une recherche sur n'importe quel film que vous souhaitez retrouver.
 De plus, afin d'accéder au chat instantané, il est nécessaire de se connecter avec un compte google, facebook, twitter, github ou anonymement, selon votre choix.
+Vous pouvez liker un film que vous avez vu afin de le partager aux autres utilisateurs.
 
 Site accessible en ligne
 --------------------------------------------------------
@@ -39,6 +40,7 @@ Tutoriel d'installation
 * Taper la commande `$ npm install ` pour installer toutes les dépendances
 * Une fois terminé, taper la commande `$ ng serve`
 * Lorsque le projet a terminé de compiler, aller dans votre navigateur à l'URL suivante: [localhost:4200](http://localhost:4200)
+* Si l'installation ne fonctionne pas, vous pouvez accéder au site en ligne ou nous contacter
 
 Axes d'amélioration
 --------------------------------------------------------
