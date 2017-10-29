@@ -21,6 +21,7 @@ import { FilmPlayingListComponent } from './films/film-playing-list/film-playing
 import { FilmLatestListComponent } from './films/film-latest-list/film-latest-list.component';
 import { FilmSingleComponent } from './films/film-single/film-single.component';
 import { FilmSearchListComponent } from './films/film-search-list/film-search-list.component';
+import { UpvoteButtonComponent } from './upvote/upvote-button.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { FilmSearchListComponent } from './films/film-search-list/film-search-li
     FilmPlayingListComponent,
     FilmLatestListComponent,
     FilmSingleComponent,
-    FilmSearchListComponent
+    FilmSearchListComponent,
+    UpvoteButtonComponent
   ],
   exports: [
     TopNavComponent,
@@ -59,7 +61,8 @@ import { FilmSearchListComponent } from './films/film-search-list/film-search-li
     FilmUpComingListComponent,
     FilmPlayingListComponent,
     FilmLatestListComponent,
-    FilmSearchListComponent
+    FilmSearchListComponent,
+    UpvoteButtonComponent
   ]
 })
 export class UiModule { }

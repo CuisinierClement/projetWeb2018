@@ -1,11 +1,2 @@
-<div class="votebox">
-  <span class="fa fa-arrow-up vote up"
-        (click)="upvote()"
-        [ngClass]="{'active' : userVote > 0 }">
-  </span>
-  <span class="vote-count">{{voteCount}}</span>
-  <span class="fa fa-arrow-down vote down"
-        (click)="downvote()"
-        [ngClass]="{'active' : userVote < 0 }">
-  </span>
-</div>
+<a (click)="upvote()"><i class="fa fa-thumbs-o-up"></i></a>
+<span class="vote-count" *ngIf="voteCount==1"><b>{{voteCount}}</b></span>

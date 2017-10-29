@@ -1,20 +1,7 @@
-.votebox {
-  height: 120px;
-  width: 120px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  font-size: 2em;
-  .vote {
-    cursor: pointer;
-    &:hover {
-    color: orange;
- }
-  }
-  .active.up {
-    color: green;
-  }
-  .active.down {
-    color: red;
-  }
+i {
+  font-size: 32px;
+}
+
+.vote-count {
+  color: white;
 }
