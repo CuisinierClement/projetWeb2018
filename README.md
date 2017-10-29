@@ -1,7 +1,7 @@
 **Projet Web 2018 : 5A - Filmo**
 -------------------------------------------------------
 
-Groupe de travail
+Groupe de travail - 5A UFA
 -------------------------------------------------------
 * CUISINIER Clément
 * IANCU Raphaël
@@ -39,6 +39,15 @@ Tutoriel d'installation
 * Taper la commande `$ npm install ` pour installer toutes les dépendances
 * Une fois terminé, taper la commande `$ ng serve`
 * Lorsque le projet a terminé de compiler, aller dans votre navigateur à l'URL suivante: [localhost:4200](http://localhost:4200)
+
+Axes d'amélioration
+--------------------------------------------------------
+Il aurait été possible d'ajouter de nouvelles fonctionnalités au site mais par manque de temps, étant uniquement apprentis dans ce groupe, nous n'avons pas pu.
+Ces fonctionnalités aurait pu être:
+* De visualiser les films que l'on a aimé
+* De discuter dans un chat privé
+* De mettre une note et un commentaire aux films
+* De pouvoir visualiser la bande d'annonce
 
 Choix de technologies
 --------------------------------------------------------

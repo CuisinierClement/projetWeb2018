@@ -1,2 +1,3 @@
-<a (click)="upvote()"><i class="fa fa-thumbs-o-up"></i></a>
+<a *ngIf="voteCount!=1" (click)="upvote()"><i class="fa fa-thumbs-o-up"></i></a>
+<a *ngIf="voteCount==1" (click)="upvote()"><i class="fa fa-thumbs-up"></i></a>
 <span class="vote-count" *ngIf="voteCount==1"><b>{{voteCount}}</b></span>

@@ -1,7 +1,11 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <h2><span class="glyphicon glyphicon-film"></span><b> A l'affiche </b><span class="glyphicon glyphicon-film"></span></h2>
 <div *ngFor="let film of _filmsArray">
   <div class="col-md-6 col-sm-6">
     <div class="thumbnail">
+        <div class="vote">
+            <upvote-button [itemId]='film.id' [userId]='user'></upvote-button>
+        </div>
         <a routerLink="/film/{{film.id}}" routerLinkActive="active">
         <div class="imgcontainer">
             <img src="https://image.tmdb.org/t/p/w500{{film.poster_path}}"/>

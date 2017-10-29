@@ -1,3 +1,4 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <h2><span class="glyphicon glyphicon-film"></span><b> Rechercher un film qui vous tente </b><span class="glyphicon glyphicon-film"></span></h2>
 <input type="text" name="search" placeholder="Rechercher..." (keyup.enter)="getSearchFilm($event.target.value)">
 
@@ -5,6 +6,9 @@
     <div *ngFor="let film of _filmsArray.results">
         <div class="col-md-6 col-sm-6">
             <div class="thumbnail">
+                <div class="vote">
+                    <upvote-button [itemId]='film.id' [userId]='user'></upvote-button>
+                </div>
                 <a routerLink="/film/{{film.id}}" routerLinkActive="active">
                 <div class="imgcontainer">
                     <img *ngIf="film.poster_path; else noImage" src="https://image.tmdb.org/t/p/w500{{film.poster_path}}"/>

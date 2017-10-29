@@ -19,6 +19,8 @@
           <a id="tk-xs-main-title" class="navbar-brand visible-xs" routerLink="popular">Les plus populaires</a>
           <a id="tk-xs-main-title" class="navbar-brand visible-xs" routerLink="toprated">Les mieux notés</a>
           <a id="tk-xs-main-title" class="navbar-brand visible-xs" routerLink="search">Retrouver un film</a>
+          <a id="tk-xs-main-title" (click)="openModal(login)" class="navbar-brand visible-xs" data-rel="popup1" role="button">Connexion</a>
+          <a id="tk-xs-main-title" (click)="logout()" class="navbar-brand visible-xs" role="button">Déconnexion</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-left active_menu">
